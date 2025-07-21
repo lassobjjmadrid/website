@@ -1,0 +1,315 @@
+#navbar-enableJS {
+    font-size: .7em;
+    margin-left: -9em;
+}
+
+.intro-header {
+    background: url(Cover3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner {
+    background: url(Banner1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner-social-buttons {
+    float: left;
+    margin-top: 15px;
+}
+
+.team-member {
+    float: none;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 180px;
+    margin: 10px auto 30px auto;
+}
+
+.team-member h4 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+
+.team-member>p {
+    line-height: 70%;
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.team-member>p.grade {
+    margin-top: 8px;
+}
+
+
+.team-member p.original-academy>span.with {
+    font-size: 75%;
+}
+
+.team-member p.original-academy>a {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: 90%;
+}
+
+
+.team-member p.original-academy {
+    margin-top: 7px;
+}
+
+
+.team-member img {
+    margin: 0 auto;
+    padding: 9px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 130px;
+    height: 130px;
+}
+
+
+.copyright-small {
+    margin-top: 5px;
+    font-size: .8em;
+}
+
+
+
+@media (min-width: 992px) {
+
+    .federation-member {
+        float: none;
+        text-align: center;
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .federation-member img {
+        margin: auto;
+        max-width: 110px;
+    }
+
+    .federation-member h4 {
+        font-size: 1.1em;
+        margin-top: 15px;
+    }
+}
+
+.under-contruction {
+    height: 150px;
+}
+
+.under-contruction img {
+    background-color: #f8f8f8;
+    border-width: 0px;
+    padding: 0px;
+}
+
+
+.former-frame {
+    background-color: #dadada;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+#former-row {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 16px;
+}
+
+#former-row a {
+    outline: none;
+    text-decoration: none !important;
+}
+
+
+div.origin {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 70px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    div.origin {
+        margin-top: -20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    div.origin {
+        margin-top: -5px;
+    }
+}
+
+
+.section-heading {
+    line-height: 130%;
+}
+
+
+h3.section-heading {
+    margin-top: 60px;
+}
+
+
+.section-subheading {
+    margin-bottom: 30px;
+    margin-top: -25px;
+    color: #777;
+}
+
+@media (max-width: 320px) {
+    .section-subheading {
+        font-size: 1.6em;
+    }
+}
+
+
+.second-heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+.intro-message>h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 6em;
+}
+
+.intro-message>h2 {
+    margin-top: 0.7em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 2.5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-message>h3 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 2.4em;
+}
+
+.pronunciation {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 32px;
+}
+
+
+
+#classes p#summer {
+    font-size: 98%;
+    text-align: left;
+}
+
+#classes p#summer>img {
+    height: 20px;
+    vertical-align: text-bottom;
+    margin-right: 3px;
+}
+
+table.address {
+    margin-left: 30px;
+}
+
+
+
+#schedule {
+    border: none;
+    margin-top: 50px;
+    border-bottom: 2px solid #ddd;
+}
+
+table#schedule .time {
+    text-align: right;
+}
+
+#offdays {
+    padding-top: 50px;
+}
+
+table.days-off {
+    border: none;
+    border-bottom: 2px solid #ddd;
+}
+
+table.days-off td.no-dt {
+    text-align: right;
+}
+
+table.days-off td.no-range {
+    text-align: right;
+}
+
+
+#kids table.days-off {
+    margin-top: 40px;
+}
+
+
+table#phone {
+    font-size: .85em;
+    width: 290px;
+    border-bottom: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+    margin: 4px;
+}
+
+table#phone td:first-child {
+    text-align: left;
+}
+
+table#phone td:last-child {
+    text-align: right;
+}
+
+
+.box-phone {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+
+h2.section-heading small {
+    color: #000;
+}
+
+
+p#seeMap {
+    visibility: hidden;
+}
