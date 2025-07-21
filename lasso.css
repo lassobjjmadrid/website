@@ -8,11 +8,6 @@
     background-size: cover;
 }
 
-.banner {
-    background: url(Banner1.jpg) no-repeat center center;
-    background-size: cover;
-}
-
 .banner-social-buttons {
     float: left;
     margin-top: 15px;
@@ -81,59 +76,11 @@
 }
 
 
-
-@media (min-width: 992px) {
-
-    .federation-member {
-        float: none;
-        text-align: center;
-        max-width: 150px;
-        margin-bottom: 20px;
-    }
-
-    .federation-member img {
-        margin: auto;
-        max-width: 110px;
-    }
-
-    .federation-member h4 {
-        font-size: 1.1em;
-        margin-top: 15px;
-    }
-}
-
-.under-contruction {
-    height: 150px;
-}
-
 .under-contruction img {
     background-color: #f8f8f8;
     border-width: 0px;
     padding: 0px;
 }
-
-
-.former-frame {
-    background-color: #dadada;
-    padding: 0;
-    margin: 0;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-
-
-#former-row {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    text-align: right;
-    font-size: 16px;
-}
-
-#former-row a {
-    outline: none;
-    text-decoration: none !important;
-}
-
 
 div.origin {
     font-size: 16px;
