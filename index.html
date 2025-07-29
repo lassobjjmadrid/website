@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--*-html-*-->
+
 <html lang="en">
 
 <head>
@@ -68,7 +68,6 @@
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top topnav">
     <div class="container topnav">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -86,8 +85,10 @@
           <li><a href="#kids">kids</a></li>
           <li><a href="#team">team</a></li>
           <li><a href="#name">clases privadas</a></li>
+          <li><a href="#prices">valores</a></li>
+          <!-- <li><a href="#faq">faq</a></li> -->
           <li><a href="#contact">contactar</a></li>
-          <!-- <li><a href="#map">mapa</a></li> -->
+          <li><a href="#map">mapa</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -147,13 +148,14 @@
     <div class="container">
       <div class="row">
         <div class="clearfix"></div>
-        <h2 class="section-heading">Clases <small>&mdash; donde y cuando</small>
+        <h2 class="section-heading">Clases
         </h2>
-        <p class="lead">Nuestro gimnasio esta localizado en:</p>
-        <p class="lead"><a href="https://maps.app.goo.gl/AHGZsWYgYLZX1mbR7" target="_blank">Calle Londres, 22, 28028 Madrid,España</a></p>
+        <!-- <p class="lead">Nuestro gimnasio esta localizado en:</p>
+        <p class="lead"><a href="https://maps.app.goo.gl/AHGZsWYgYLZX1mbR7" target="_blank">Calle Londres, 22, 28028
+            Madrid,España</a></p>
         <p class="lead">En Lasso BJJ, los visitantes y principiantes son siempre
           bien venidos!
-        </p>
+        </p> -->
       </div>
       <div class="row">
         <style>
@@ -396,8 +398,118 @@
     </div>
     <!-- /.container -->
   </div>
+
+  <div id="prices" class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5  col-sm-6">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Valores</h2>
+          <p class="lead">En Lasso BJJ, ofrecemos una variedad de opciones de membresía para adaptarnos a tus
+            necesidades y estilo de vida. Nuestros precios son competitivos y reflejan la calidad de la enseñanza y las
+            instalaciones que ofrecemos.</p>
+
+          <!-- <p class="lead">Ofrecemos descuentos para estudiantes, familias y membresías a largo plazo. Además, contamos
+            con promociones especiales para nuevos miembros y eventos ocasionales.</p> -->
+        </div>
+        <div class="col-md-6 col-md-offset-1 col-sm-6">
+          <div class="precios-container">
+
+            <div class="precio-card">
+              <h3 class="precio-titulo">Adulto</h3>
+              <div class="precio-valor">
+                80<span class="moneda">€</span>
+              </div>
+              <p class="precio-descripcion">Tarifa por persona</p>
+            </div>
+
+            <div class="precio-card">
+              <h3 class="precio-titulo">Niños</h3>
+              <div class="precio-valor">
+                50<span class="moneda">€</span>
+              </div>
+              <p class="precio-descripcion">Tarifa hasta 12 años</p>
+            </div>
+            <style>
+              /* --- Estilos para la Sección de Precios --- */
+
+              /* Contenedor principal que alinea las tarjetas */
+              .precios-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 20px;
+                gap: 30px;
+                /* Espacio entre las tarjetas */
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                background-color: #f8f9fa;
+                /* Un fondo gris muy claro para la sección */
+              }
+
+              /* Estilo base de cada tarjeta de precio */
+              .precio-card {
+                background-color: #ffffff;
+                border-radius: 15px;
+                /* Esquinas redondeadas */
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+                /* Sombra suave para dar profundidad */
+                padding: 40px 30px;
+                text-align: center;
+                width: 280px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              }
+
+              /* Efecto al pasar el ratón por encima de la tarjeta */
+              .precio-card:hover {
+                transform: translateY(-10px);
+                /* La tarjeta se eleva un poco */
+                box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+              }
+
+              /* Título de la tarjeta (Adulto, Niños) */
+              .precio-titulo {
+                font-size: 24px;
+                font-weight: 600;
+                color: #333;
+                margin-bottom: 15px;
+              }
+
+              /* Estilo para el número del precio */
+              .precio-valor {
+                font-size: 60px;
+                font-weight: 700;
+                color: #0056b3;
+                /* Un color azul para destacar el precio */
+                margin-bottom: 10px;
+              }
+
+              /* Estilo para el símbolo de la moneda (€) */
+              .moneda {
+                font-size: 32px;
+                font-weight: 600;
+                vertical-align: super;
+                /* Alinea el símbolo arriba */
+                margin-left: 2px;
+              }
+
+              /* Pequeña descripción opcional debajo del precio */
+              .precio-descripcion {
+                font-size: 14px;
+                color: #6c757d;
+                margin: 0;
+              }
+
+              º
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+
   <!-- /.content-section-a -->
-  <div id="contact">
+  <div id="contact" class="content-section-a">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -417,7 +529,7 @@
           <tbody>
             <tr>
               <td>Telefono</td>
-              <td><a href="tel:=+34XXXXXXXXX">+32 XXX XX XX XX</a></td>
+              <td><a href="tel:=+34XXXXXXXXX">+34 647 54 73 58</a></td>
             </tr>
             <tr>
               <td>Email</td>
@@ -430,7 +542,25 @@
     <!-- /.container -->
   </div>
   <!-- /.banner -->
-  <!-- <div id="affiliation" class="content-section-b">
+  <div id="map" class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-heading">Mapa</h2>
+        </div>
+        <div class="col-md-12">
+          <p class="lead">Estamos ubicados en <b>Calle Londres, 22, 28028 Madrid</b></p>
+          <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9856613898705!2d-3.6689395000000005!3d40.4313164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b6f3d21b23%3A0xeeae4d4caed21c8!2sC.%20de%20Londres%2C%2022%2C%20Salamanca%2C%2028028%20Madrid!5e0!3m2!1sen!2ses!4v1753800091993!5m2!1sen!2ses"
+            width="1024" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br />
+          
+        </div>
+      </div>
+    </div>
+    <!-- <div id="affiliation" class="content-section-b">
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-5">
@@ -458,34 +588,73 @@
       </div>
     </div>
   </div> -->
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="list-inline list-footer">
-            <li><a href="#">inicio</a></li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li><a href="#about">acerca de nosotros</a></li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li><a href="#classes">clases</a></li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li><a href="#kids">kids</a></li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li><a href="#team">equipo</a></li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li><a href="#name">clases privadas</a></li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li><a href="#contact">contacto</a></li>
-            <!-- <li class="footer-menu-divider">&sdot;</li>
-            <li><a href="#map" data-i18n="nav-i18n.map">mapa</a></li> -->
-          </ul>
-          <p class="copyright text-muted small">Copyright &copy; Lasso BJJ Madrid Academy 2025. &nbsp; <span>Todos los
-              derechos reservados</span></p>
+
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/34647547358" class="whatsapp-float" target="_blank" title="Chat en WhatsApp">
+      <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp" />
+    </a>
+
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .whatsapp-float:hover {
+        background-color: #1ebe5d;
+      }
+
+      .whatsapp-float img {
+        width: 32px;
+        height: 32px;
+      }
+    </style>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-inline list-footer">
+              <li><a href="#">inicio</a></li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li><a href="#about">acerca de nosotros</a></li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li><a href="#classes">clases</a></li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li><a href="#kids">kids</a></li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li><a href="#team">equipo</a></li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li><a href="#name">clases privadas</a></li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li><a href="#prices">valores</a></li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li><a href="#contact">contactar</a></li>
+              <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#map">mapa</a></li>
+            </ul>
+            <p class="copyright text-muted small">Copyright &copy; Lasso BJJ Madrid Academy 2025. &nbsp; <span>Todos los
+                derechos reservados</span></p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+
 </body>
 
 </html>
