@@ -464,75 +464,7 @@
               <p class="precio-descripcion">Tarifa hasta 12 años</p>
             </div>
             <style>
-              /* --- Estilos para la Sección de Precios --- */
 
-              /* Contenedor principal que alinea las tarjetas */
-              .precios-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 40px 20px;
-                gap: 30px;
-                /* Espacio entre las tarjetas */
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-                background-color: #f8f9fa;
-                /* Un fondo gris muy claro para la sección */
-              }
-
-              /* Estilo base de cada tarjeta de precio */
-              .precio-card {
-                background-color: #ffffff;
-                border-radius: 15px;
-                /* Esquinas redondeadas */
-                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-                /* Sombra suave para dar profundidad */
-                padding: 40px 30px;
-                text-align: center;
-                width: 280px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-              }
-
-              /* Efecto al pasar el ratón por encima de la tarjeta */
-              .precio-card:hover {
-                transform: translateY(-10px);
-                /* La tarjeta se eleva un poco */
-                box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-              }
-
-              /* Título de la tarjeta (Adulto, Niños) */
-              .precio-titulo {
-                font-size: 24px;
-                font-weight: 600;
-                color: #333;
-                margin-bottom: 15px;
-              }
-
-              /* Estilo para el número del precio */
-              .precio-valor {
-                font-size: 60px;
-                font-weight: 700;
-                color: #0056b3;
-                /* Un color azul para destacar el precio */
-                margin-bottom: 10px;
-              }
-
-              /* Estilo para el símbolo de la moneda (€) */
-              .moneda {
-                font-size: 32px;
-                font-weight: 600;
-                vertical-align: super;
-                /* Alinea el símbolo arriba */
-                margin-left: 2px;
-              }
-
-              /* Pequeña descripción opcional debajo del precio */
-              .precio-descripcion {
-                font-size: 14px;
-                color: #6c757d;
-                margin: 0;
-              }
-
-              º
             </style>
           </div>
         </div>
@@ -715,6 +647,64 @@
     </div>
   </div>
 
+  <!-- /.content-section-a -->
+  <div id="contact" class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-heading">Contactar</h2>
+        </div>
+        <!--
+        <div class="col-md-12">
+          <ul class="list-inline banner-social-buttons">
+            <li class="instagram">
+              <a href="https://instagram.com/lassobjjmadrid" class="btn btn-default btn-lg"><i
+                  class="fa fa-instagram fa-fw"></i><span class="network-name"></span></a>
+            </li>
+          </ul>
+        </div>
+        -->
+        <div class="col-md-12">
+          <p class="lead">¿Tiene alguna pregunta o desea más información? Estaremos encantados de atenderle. Puede
+            ponerse en contacto con nosotros a través de los siguientes medios:</p>
+
+          <p class="lead">📞 Teléfono: <a href="tel:=+34647547358">+34 647 54 73 58</a></p>
+          <p class="lead">📧 Email: <a href="mailto:lassobjjmadrid@gmail.com?Subject=Dudas">lassobjjmadrid@gmail.com</a>
+          </p>
+
+          <p class="lead">No dude en escribirnos o llamarnos. Le responderemos lo antes posible.</p>
+
+          <p class="lead">Escribenos para probar una clase gratuita: 
+            <br><br> 
+            <a
+              href="https://wa.me/34647547358?text=Hola,%20me%20gustar%C3%ADa%20probar%20una%20clase%20de%20prueba%20de%20jiu-jitsu."
+              target="_blank" class="btn btn-danger btn-lg">Clase Gratuita</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+
+  <div id="map" class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-heading">Mapa</h2>
+        </div>
+        <div class="col-md-12">
+          <p class="lead">Estamos ubicados en <b>Calle Londres, 22, 28028 Madrid</b></p>
+          <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9856613898705!2d-3.6689395000000005!3d40.4313164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b6f3d21b23%3A0xeeae4d4caed21c8!2sC.%20de%20Londres%2C%2022%2C%20Salamanca%2C%2028028%20Madrid!5e0!3m2!1sen!2ses!4v1753800091993!5m2!1sen!2ses"
+            width="1024" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <br />
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="affiliation" class="content-section-b">
     <div class="container">
       <div class="row">
@@ -743,174 +733,91 @@
     </div>
   </div>
 
-  <!-- /.content-section-a -->
-  <div id="contact" class="content-section-a">
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/34647547358" class="whatsapp-float" target="_blank" title="Chat en WhatsApp">
+    <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp" />
+  </a>
+
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+    }
+
+    .whatsapp-float img {
+      width: 32px;
+      height: 32px;
+    }
+  </style>
+
+  <!-- Footer -->
+  <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h2 class="section-heading">Contactar</h2>
-        </div>
-        <!--
-        <div class="col-md-12">
-          <ul class="list-inline banner-social-buttons">
-            <li class="instagram">
-              <a href="https://instagram.com/lassobjjmadrid" class="btn btn-default btn-lg"><i
-                  class="fa fa-instagram fa-fw"></i><span class="network-name"></span></a>
-            </li>
+        <div class="col-lg-12">
+          <ul class="list-inline list-footer">
+            <li><a href="#">Inicio</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#about">Nosotros</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#classes">Horario</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#kids">Kids</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#team">Equipo</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#name">Clases Privadas</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#prices">Precios</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#contact">Contactar</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#map">Mapa</a></li>
           </ul>
+          <p class="copyright text-muted small">Copyright &copy; Lasso BJJ Madrid Academy 2025. &nbsp; <span>Todos los
+              derechos reservados</span></p>
         </div>
-        -->
-        <div class="col-md-12">
-          <p class="lead">¿Tiene alguna pregunta o desea más información? Estaremos encantados de atenderle. Puede
-            ponerse en contacto con nosotros a través de los siguientes medios:</p>
+      </div>
+    </div>
+  </footer>
 
-          <p class="lead">📞 Teléfono: <a href="tel:=+34647547358">+34 647 54 73 58</a></p>
-          <p class="lead">📧 Email: <a href="mailto:lassobjjmadrid@gmail.com?Subject=Dudas">lassobjjmadrid@gmail.com</a>
+  <!-- Modal de Cookies (Bootstrap 3.3.7) -->
+  <div id="cookieModal" class="modal fade" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="text-center">
+            🍪 Utilizamos cookies para mejorar tu experiencia.
+            <br>
+            <small>Al continuar, aceptas nuestra <a href="/politica-de-cookies.html">Política de Cookies</a>.</small>
           </p>
-
-          <p class="lead">No dude en escribirnos o llamarnos. Le responderemos lo antes posible.</p>
+        </div>
+        <div class="modal-footer" style="text-align: center;">
+          <button id="declineCookies" type="button" class="btn btn-danger btn-sm">Rechazar</button>
+          <button id="acceptCookies" type="button" class="btn btn-success btn-sm">Aceptar</button>
         </div>
       </div>
     </div>
-    <!-- /.container -->
   </div>
-
-
-  <div id="map" class="content-section-b">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section-heading">Mapa</h2>
-        </div>
-        <div class="col-md-12">
-          <p class="lead">Estamos ubicados en <b>Calle Londres, 22, 28028 Madrid</b></p>
-          <br />
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9856613898705!2d-3.6689395000000005!3d40.4313164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b6f3d21b23%3A0xeeae4d4caed21c8!2sC.%20de%20Londres%2C%2022%2C%20Salamanca%2C%2028028%20Madrid!5e0!3m2!1sen!2ses!4v1753800091993!5m2!1sen!2ses"
-            width="1024" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <br />
-
-        </div>
-      </div>
-    </div>
-
-    <!-- <div id="affiliation" class="content-section-a">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-5">
-          <div class="clearfix"></div>
-          <h2 class="section-heading" data-i18n="[html]p.affiliation.title">Lasso BJJ esta afiliada con:</h2>
-        </div>
-        <div class="col-md-7 col-md-offset-1  col-sm-7">
-          <div class="row">
-            <div class="col-xs-4">
-              <div class="federation-member">
-                <img src="gft.jpeg" class="img-responsive" alt="">
-                <h4>GFT</h4>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="federation-member">
-                <a href="https://ibjjf.com/" target="_blank">
-                  <img src="IBJJF.png" class="img-responsive" alt="">
-                  <h4>International Brazilian Jiu-Jitsu Federation</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/34647547358" class="whatsapp-float" target="_blank" title="Chat en WhatsApp">
-      <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp" />
-    </a>
-
-    <style>
-      .whatsapp-float {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
-        background-color: #25d366;
-        color: white;
-        border-radius: 50px;
-        text-align: center;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background-color 0.3s ease;
-      }
-
-      .whatsapp-float:hover {
-        background-color: #1ebe5d;
-      }
-
-      .whatsapp-float img {
-        width: 32px;
-        height: 32px;
-      }
-    </style>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="list-inline list-footer">
-              <li><a href="#">Inicio</a></li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li><a href="#about">Nosotros</a></li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li><a href="#classes">Horario</a></li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li><a href="#kids">Kids</a></li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li><a href="#team">Equipo</a></li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li><a href="#name">Clases Privadas</a></li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li><a href="#prices">Precios</a></li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li><a href="#faq">Preguntas Frecuentes</a></li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li><a href="#contact">Contactar</a></li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li><a href="#map">Mapa</a></li>
-
-            </ul>
-            <p class="copyright text-muted small">Copyright &copy; Lasso BJJ Madrid Academy 2025. &nbsp; <span>Todos los
-                derechos reservados</span></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Modal de Cookies (Bootstrap 3.3.7) -->
-    <div id="cookieModal" class="modal fade" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
-      <div class="modal-dialog modal-md">
-        <div class="modal-content">
-          <div class="modal-body">
-            <p class="text-center">
-              🍪 Utilizamos cookies para mejorar tu experiencia.
-              <br>
-              <small>Al continuar, aceptas nuestra <a href="/politica-de-cookies.html">Política de Cookies</a>.</small>
-            </p>
-          </div>
-          <div class="modal-footer" style="text-align: center;">
-            <button id="declineCookies" type="button" class="btn btn-danger btn-sm">Rechazar</button>
-            <button id="acceptCookies" type="button" class="btn btn-success btn-sm">Aceptar</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
 </body>

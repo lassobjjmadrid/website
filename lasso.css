@@ -13,63 +13,6 @@
     margin-top: 15px;
 }
 
-.team-member {
-    float: none;
-    height: 200px;
-    text-align: center;
-    margin-bottom: 40px;
-    max-width: 180px;
-    margin: 10px auto 30px auto;
-}
-
-.team-member h4 {
-    font-size: 1.2em;
-    margin-top: 15px;
-    margin-bottom: 0;
-    text-transform: none;
-}
-
-
-.team-member>p {
-    line-height: 70%;
-    margin-top: 8px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.team-member>p.grade {
-    margin-top: 8px;
-}
-
-
-.team-member p.original-academy>span.with {
-    font-size: 75%;
-}
-
-.team-member p.original-academy>a {
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: 90%;
-}
-
-
-.team-member p.original-academy {
-    margin-top: 7px;
-}
-
-
-.team-member img {
-    margin: 0 auto;
-    padding: 9px;
-    background-color: white;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    width: 130px;
-    height: 130px;
-}
-
-
 .copyright-small {
     margin-top: 5px;
     font-size: .8em;
@@ -259,4 +202,73 @@ h2.section-heading small {
 
 p#seeMap {
     visibility: hidden;
+}
+
+
+/* --- Estilos para la Sección de Precios --- */
+
+/* Contenedor principal que alinea las tarjetas */
+.precios-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+    /* Espacio entre las tarjetas */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    /* Un fondo gris muy claro para la sección */
+}
+
+/* Estilo base de cada tarjeta de precio */
+.precio-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para dar profundidad */
+    padding: 40px 30px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por encima de la tarjeta */
+.precio-card:hover {
+    transform: translateY(-10px);
+    /* La tarjeta se eleva un poco */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Título de la tarjeta (Adulto, Niños) */
+.precio-titulo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el número del precio */
+.precio-valor {
+    font-size: 60px;
+    font-weight: 700;
+    color: #0056b3;
+    /* Un color azul para destacar el precio */
+    margin-bottom: 10px;
+}
+
+/* Estilo para el símbolo de la moneda (€) */
+.moneda {
+    font-size: 32px;
+    font-weight: 600;
+    vertical-align: super;
+    /* Alinea el símbolo arriba */
+    margin-left: 2px;
+}
+
+/* Pequeña descripción opcional debajo del precio */
+.precio-descripcion {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
 }
