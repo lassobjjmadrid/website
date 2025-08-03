@@ -647,3 +647,415 @@ p#seeMap {
         animation: none;
     }
 }
+/*
+ === Contact Form Styles === */
+
+.contact-form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-form .form-control {
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.contact-form .form-control:focus {
+    border-color: #d9534f;
+    box-shadow: 0 0 0 0.2rem rgba(217, 83, 79, 0.25);
+    background-color: white;
+    outline: none;
+}
+
+.contact-form .form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.contact-form .form-control.is-valid {
+    border-color: #28a745;
+}
+
+.contact-form .invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #dc3545;
+}
+
+.contact-form textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form select.form-control,
+.contact-form select#interest {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    padding-right: 40px;
+    color: #333 !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    background-color: #f8f9fa !important;
+}
+
+.contact-form select.form-control:focus,
+.contact-form select#interest:focus {
+    color: #333 !important;
+    background-color: white !important;
+}
+
+/* More specific selectors for dropdown options */
+select#interest option,
+.contact-form select.form-control option {
+    color: #333 !important;
+    background-color: white !important;
+    font-size: 16px !important;
+    padding: 8px 12px;
+    font-weight: normal !important;
+}
+
+/* Selected option styling */
+select#interest option:checked,
+select#interest option:selected,
+.contact-form select.form-control option:checked,
+.contact-form select.form-control option:selected {
+    background-color: #d9534f !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.contact-form .checkbox {
+    margin: 20px 0;
+}
+
+.contact-form .checkbox label {
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-form .checkbox input[type="checkbox"] {
+    margin-top: 3px;
+    transform: scale(1.2);
+}
+
+.contact-submit-btn {
+    background-color: #d9534f;
+    border-color: #d9534f;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-submit-btn:hover {
+    background-color: #c9302c;
+    border-color: #c9302c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(217, 83, 79, 0.4);
+}
+
+.contact-submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Contact Information Styles */
+.contact-info {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.contact-info h3 {
+    color: white;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.contact-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+
+.contact-icon {
+    background: rgba(255,255,255,0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: 20px;
+    color: white;
+}
+
+.contact-details h4 {
+    color: white;
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-details p {
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.contact-details a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-details a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.contact-social {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-social h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.social-link:hover {
+    background: rgba(255,255,255,0.3);
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.social-link.whatsapp:hover {
+    background: #25d366;
+}
+
+.contact-cta {
+    text-align: center;
+}
+
+.contact-cta .btn {
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Form validation states */
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+.was-validated .form-control:valid {
+    border-color: #28a745;
+}
+
+.was-validated .invalid-feedback {
+    display: block;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .contact-form-container {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-info {
+        margin-top: 20px;
+        position: static;
+    }
+    
+    .contact-submit-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        margin: 0 auto 10px auto;
+    }
+}
+
+/* Loading state for form submission */
+.contact-form.loading .contact-submit-btn {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.contact-form.loading .contact-submit-btn i {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success/Error message styling */
+#contactSuccess,
+#contactError {
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    font-weight: 500;
+}
+
+#contactSuccess {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+#contactError {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+/* === 
+Free Class Modal Styles === */
+#freeClassModal .modal-header {
+    background: linear-gradient(135deg, #d9534f 0%, #c9302c 100%);
+    color: white;
+    border-radius: 6px 6px 0 0;
+}
+
+#freeClassModal .modal-header .close {
+    color: white;
+    opacity: 0.8;
+    text-shadow: none;
+}
+
+#freeClassModal .modal-header .close:hover {
+    opacity: 1;
+}
+
+#freeClassModal .modal-title {
+    font-weight: 600;
+}
+
+.contact-options {
+    margin-top: 20px;
+}
+
+.contact-option {
+    text-align: center;
+    padding: 20px 15px;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.contact-option:hover {
+    border-color: #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-option h5 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-option .small {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.contact-option .btn {
+    font-weight: 500;
+}
+
+#freeClassModal .mt-3 {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* Mobile responsiveness for modal */
+@media (max-width: 767px) {
+    .contact-option {
+        margin-bottom: 20px;
+    }
+    
+    #freeClassModal .modal-dialog {
+        margin: 10px;
+    }
+}
