@@ -319,6 +319,21 @@ p#seeMap {
     transition: all 0.3s ease;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     animation: pulse 2s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* WhatsApp SVG icon styling */
+#whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+}
+
+/* Font Awesome icon fallback */
+#whatsapp-float i {
+    font-size: 24px;
 }
 
 #whatsapp-float:hover {
@@ -409,6 +424,30 @@ p#seeMap {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+.calculate-distance-btn {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.calculate-distance-btn:hover:not(:disabled) {
+    background-color: #138496;
+    border-color: #117a8b;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.calculate-distance-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
 /* Distance info */
 .distance-info {
     margin: 15px 0;
@@ -418,6 +457,18 @@ p#seeMap {
 
 .distance-info i {
     color: #5bc0de;
+    margin-right: 8px;
+}
+
+/* Distance error messages */
+.distance-error {
+    margin: 15px 0;
+    border-left: 4px solid #f0ad4e;
+    font-size: 14px;
+}
+
+.distance-error i {
+    color: #f0ad4e;
     margin-right: 8px;
 }
 

@@ -22,13 +22,23 @@ $(document).ready(function() {
             console.log('Map loaded successfully');
         });
 
-        // Add directions button
-        var directionsBtn = $('<div class="map-controls"><a href="https://www.google.com/maps/dir//' + 
+        // Add map control buttons
+        var mapControls = $('<div class="map-controls">' +
+            '<a href="https://www.google.com/maps/dir//' + 
             encodeURIComponent(ACADEMY_LOCATION.address) + 
             '" target="_blank" class="btn btn-primary btn-sm map-directions-btn">' +
-            '<i class="fa fa-location-arrow"></i> Cómo llegar</a></div>');
+            '<i class="fa fa-location-arrow"></i> Cómo llegar</a>' +
+            '<button class="btn btn-info btn-sm calculate-distance-btn" style="margin-left: 10px;">' +
+            '<i class="fa fa-map-marker"></i> Calcular distancia</button>' +
+            '</div>');
         
-        $('#map .container .row .col-md-12').append(directionsBtn);
+        $('#map .container .row .col-md-12').append(mapControls);
+
+        // Add click handler for distance calculation
+        $('.calculate-distance-btn').click(function() {
+            $(this).prop('disabled', true).html('<i class="fa fa-spinner fa-spin"></i> Calculando...');
+            getUserLocationOnDemand();
+        });
 
         // Add public transport info
         var transportInfo = $('<div class="transport-info">' +
@@ -49,8 +59,8 @@ $(document).ready(function() {
         $('#map .container .row .col-md-12').append(transportInfo);
     }
 
-    // Get user location and calculate distance
-    function getUserLocation() {
+    // Get user location on demand (only when user clicks the button)
+    function getUserLocationOnDemand() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 function(position) {
@@ -65,11 +75,48 @@ $(document).ready(function() {
                     
                     // Show distance info
                     showDistanceInfo(distance);
+                    
+                    // Re-enable button
+                    $('.calculate-distance-btn').prop('disabled', false)
+                        .html('<i class="fa fa-map-marker"></i> Calcular distancia');
                 },
                 function(error) {
                     console.log('Geolocation error:', error.message);
+                    
+                    // Show error message
+                    var errorMsg = $('<div class="alert alert-warning distance-error">' +
+                        '<i class="fa fa-exclamation-triangle"></i> ' +
+                        'No se pudo obtener tu ubicación. Puedes usar el botón "Cómo llegar" para obtener direcciones.' +
+                    '</div>');
+                    
+                    $('#map .container .row .col-md-12').prepend(errorMsg);
+                    
+                    // Auto-hide error after 5 seconds
+                    setTimeout(function() {
+                        errorMsg.fadeOut();
+                    }, 5000);
+                    
+                    // Re-enable button
+                    $('.calculate-distance-btn').prop('disabled', false)
+                        .html('<i class="fa fa-map-marker"></i> Calcular distancia');
                 }
             );
+        } else {
+            // Geolocation not supported
+            var errorMsg = $('<div class="alert alert-warning distance-error">' +
+                '<i class="fa fa-exclamation-triangle"></i> ' +
+                'Tu navegador no soporta geolocalización. Usa el botón "Cómo llegar" para obtener direcciones.' +
+            '</div>');
+            
+            $('#map .container .row .col-md-12').prepend(errorMsg);
+            
+            setTimeout(function() {
+                errorMsg.fadeOut();
+            }, 5000);
+            
+            // Re-enable button
+            $('.calculate-distance-btn').prop('disabled', false)
+                .html('<i class="fa fa-map-marker"></i> Calcular distancia');
         }
     }
 
@@ -180,7 +227,6 @@ $(document).ready(function() {
     // Initialize all map features
     function initMap() {
         initMapFeatures();
-        getUserLocation();
         addLandmarkInfo();
         enhanceContactInfo();
         addBusinessHours();
