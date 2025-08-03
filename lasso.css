@@ -272,3 +272,327 @@ p#seeMap {
     color: #6c757d;
     margin: 0;
 }
+/* ==
+= JavaScript Enhanced Features Styles === */
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d9534f;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+#back-to-top:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* WhatsApp floating button */
+#whatsapp-float {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    z-index: 1000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    animation: pulse 2s infinite;
+}
+
+#whatsapp-float:hover {
+    background-color: #128c7e;
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Smooth animations for sections */
+.content-section-a,
+.content-section-b {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.content-section-a.animate-in,
+.content-section-b.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Active navigation state */
+.navbar-nav li.active a {
+    background-color: rgba(255,255,255,0.1) !important;
+    border-radius: 4px;
+}
+
+/* FAQ accordion enhancements */
+.panel-heading.active {
+    background-color: #f5f5f5;
+}
+
+.panel-heading.active .panel-title a {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Responsive schedule table */
+@media (max-width: 767px) {
+    .table-responsive-stack {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .table-responsive-stack table {
+        min-width: 600px;
+    }
+}
+
+/* === Map Section Enhancements === */
+
+/* Map controls */
+.map-controls {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.map-directions-btn {
+    background-color: #4285f4;
+    border-color: #4285f4;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.map-directions-btn:hover {
+    background-color: #3367d6;
+    border-color: #3367d6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Distance info */
+.distance-info {
+    margin: 15px 0;
+    border-left: 4px solid #5bc0de;
+    font-size: 16px;
+}
+
+.distance-info i {
+    color: #5bc0de;
+    margin-right: 8px;
+}
+
+/* Transport info */
+.transport-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid #28a745;
+}
+
+.transport-info h4 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.transport-info h4 i {
+    margin-right: 10px;
+}
+
+.transport-options {
+    display: grid;
+    gap: 10px;
+}
+
+.transport-option {
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    border-left: 3px solid #28a745;
+}
+
+.transport-option strong {
+    color: #28a745;
+}
+
+/* Landmark info */
+.landmark-info {
+    background-color: #fff3cd;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid #ffc107;
+}
+
+.landmark-info h4 {
+    color: #856404;
+    margin-bottom: 15px;
+}
+
+.landmark-info h4 i {
+    margin-right: 10px;
+}
+
+.landmark-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.landmark-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0e68c;
+}
+
+.landmark-list li:last-child {
+    border-bottom: none;
+}
+
+.landmark-list li i {
+    color: #ffc107;
+    margin-right: 10px;
+    width: 20px;
+}
+
+/* Copy address button */
+.copy-address-btn {
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.copy-success {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+/* Business hours in map section */
+.business-hours-map {
+    background-color: #e7f3ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid #007bff;
+}
+
+.business-hours-map h4 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.business-hours-map h4 i {
+    margin-right: 10px;
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.hours-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    border-left: 3px solid #007bff;
+}
+
+/* Mobile responsiveness for map enhancements */
+@media (max-width: 767px) {
+    .transport-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .hours-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .landmark-info,
+    .transport-info,
+    .business-hours-map {
+        margin: 15px -15px;
+        border-radius: 0;
+    }
+    
+    #whatsapp-float {
+        bottom: 70px;
+        right: 15px;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 22px;
+    }
+    
+    #back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    #whatsapp-float,
+    #back-to-top {
+        border: 2px solid white;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .content-section-a,
+    .content-section-b,
+    #whatsapp-float,
+    #back-to-top {
+        transition: none;
+        animation: none;
+    }
+    
+    #whatsapp-float {
+        animation: none;
+    }
+}
