@@ -210,33 +210,64 @@ $(document).ready(function() {
         return data;
     }
 
-    // Submit form (currently using mailto, can be replaced with backend)
+    // Submit form using Formspree service
     function submitForm(formData, submitBtn) {
-        // Create email content
+        // Formspree endpoint - SETUP REQUIRED:
+        // 1. Go to https://formspree.io/
+        // 2. Sign up for free account
+        // 3. Create a new form
+        // 4. Replace YOUR_FORM_ID below with your actual form ID
+        const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID'; // Replace with actual ID
+        
+        // Prepare form data for submission
+        const submitData = new FormData();
+        submitData.append('name', formData.name);
+        submitData.append('email', formData.email);
+        submitData.append('phone', formData.phone || '');
+        submitData.append('interest', formData.interest);
+        submitData.append('message', formData.message);
+        submitData.append('newsletter', formData.newsletter ? 'Sí' : 'No');
+        submitData.append('_subject', `Contacto desde web: ${formData.interest}`);
+        
+        // Submit to Formspree
+        fetch(formspreeEndpoint, {
+            method: 'POST',
+            body: submitData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Success
+                showSuccessMessage();
+                resetForm();
+                trackFormSubmission(formData);
+            } else {
+                // Error from Formspree
+                response.json().then(data => {
+                    showErrorMessage('Error al enviar el mensaje. Por favor, inténtalo de nuevo.');
+                });
+            }
+        })
+        .catch(error => {
+            // Network error - fallback to mailto
+            console.log('Network error, falling back to mailto:', error);
+            fallbackToMailto(formData);
+        })
+        .finally(() => {
+            hideLoadingState(submitBtn);
+        });
+    }
+    
+    // Fallback to mailto if Formspree fails
+    function fallbackToMailto(formData) {
         const emailSubject = `Contacto desde web: ${formData.interest}`;
         const emailBody = createEmailBody(formData);
-        
-        // Create mailto link
         const mailtoLink = `mailto:contacto@lassobjjmadrid.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
         
-        // Simulate processing time
-        setTimeout(() => {
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Show success message
-            showSuccessMessage();
-            
-            // Reset form
-            resetForm();
-            
-            // Hide loading state
-            hideLoadingState(submitBtn);
-            
-            // Track form submission
-            trackFormSubmission(formData);
-            
-        }, 1500);
+        window.location.href = mailtoLink;
+        showSuccessMessage('Se ha abierto tu cliente de email. Por favor, envía el mensaje desde allí.');
     }
 
     // Create email body from form data
@@ -262,7 +293,10 @@ Fecha: ${new Date().toLocaleString('es-ES')}
     }
 
     // Show success message
-    function showSuccessMessage() {
+    function showSuccessMessage(customMessage) {
+        if (customMessage) {
+            $('#contactSuccess').html(`<strong>¡Éxito!</strong> ${customMessage}`);
+        }
         $('#contactSuccess').slideDown();
         $('#contactError').slideUp();
         
@@ -278,7 +312,10 @@ Fecha: ${new Date().toLocaleString('es-ES')}
     }
 
     // Show error message
-    function showErrorMessage() {
+    function showErrorMessage(customMessage) {
+        if (customMessage) {
+            $('#contactError').html(`<strong>Error:</strong> ${customMessage}`);
+        }
         $('#contactError').slideDown();
         $('#contactSuccess').slideUp();
         
