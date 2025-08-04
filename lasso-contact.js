@@ -212,12 +212,8 @@ $(document).ready(function() {
 
     // Submit form using Formspree service
     function submitForm(formData, submitBtn) {
-        // Formspree endpoint - SETUP REQUIRED:
-        // 1. Go to https://formspree.io/
-        // 2. Sign up for free account
-        // 3. Create a new form
-        // 4. Replace YOUR_FORM_ID below with your actual form ID
-        const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID'; // Replace with actual ID
+        // Formspree endpoint - using your actual form ID
+        const formspreeEndpoint = 'https://formspree.io/f/mnnzbkap';
         
         // Prepare form data for submission
         const submitData = new FormData();
