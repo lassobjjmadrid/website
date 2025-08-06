@@ -66,7 +66,7 @@ $(document).ready(function() {
     });
 
     // Back to top button
-    var backToTop = $('<div id="back-to-top" title="Volver arriba"><i class="fa fa-chevron-up"></i></div>');
+    var backToTop = $('<div id="back-to-top" title="Volver arriba"><i class="fas fa-chevron-up"></i></div>');
     $('body').append(backToTop);
     
     $(window).scroll(function() {

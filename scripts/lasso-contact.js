@@ -187,14 +187,14 @@ $(document).ready(function () {
     // Show loading state on submit button
     function showLoadingState(submitBtn) {
         submitBtn.prop('disabled', true)
-            .html('<i class="fa fa-spinner fa-spin"></i> Enviando...');
+            .html('<i class="fas fa-spinner fa-spin"></i> Enviando...');
         $('.contact-form').addClass('loading');
     }
 
     // Hide loading state
     function hideLoadingState(submitBtn) {
         submitBtn.prop('disabled', false)
-            .html('<i class="fa fa-paper-plane"></i> Enviar Mensaje');
+            .html('<i class="fas fa-paper-plane"></i> Enviar Mensaje');
         $('.contact-form').removeClass('loading');
     }
 

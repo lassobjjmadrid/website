@@ -28,9 +28,9 @@ $(document).ready(function () {
                 '<a href="https://www.google.com/maps/dir//' +
                 encodeURIComponent(ACADEMY_LOCATION.address) +
                 '" target="_blank" class="btn btn-primary btn-sm map-directions-btn">' +
-                '<i class="fa fa-location-arrow"></i> Cómo llegar</a>' +
+                '<i class="fas fa-location-arrow"></i> Cómo llegar</a>' +
                 '<button class="btn btn-info btn-sm calculate-distance-btn" style="margin-left: 10px;">' +
-                '<i class="fa fa-map-marker"></i> Calcular distancia</button>' +
+                '<i class="fas fa-map-marker-alt"></i> Calcular distancia</button>' +
                 '</div>');
 
             // Add after the iframe
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
             // Add click handler for distance calculation
             $('.calculate-distance-btn').click(function () {
-                $(this).prop('disabled', true).html('<i class="fa fa-spinner fa-spin"></i> Calculando...');
+                $(this).prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Calculando...');
                 getUserLocationOnDemand();
             });
         }
@@ -46,7 +46,7 @@ $(document).ready(function () {
         // Add public transport info (only if it doesn't exist)
         // if ($('.transport-info').length === 0) {
         //     var transportInfo = $('<div class="transport-info">' +
-        //         '<h4><i class="fa fa-subway"></i> Transporte Público</h4>' +
+        //         '<h4><i class="fas fa-subway"></i> Transporte Público</h4>' +
         //         '<div class="transport-options">' +
         //         '<div class="transport-option">' +
         //         '<strong>Metro:</strong> Línea 4 - Estación Avenida de América (10 min caminando)' +
@@ -88,14 +88,14 @@ $(document).ready(function () {
 
                     // Re-enable button
                     $('.calculate-distance-btn').prop('disabled', false)
-                        .html('<i class="fa fa-map-marker"></i> Calcular distancia');
+                        .html('<i class="fas fa-map-marker-alt"></i> Calcular distancia');
                 },
                 function (error) {
                     console.log('Geolocation error:', error.message);
 
                     // Show error message
                     var errorMsg = $('<div class="alert alert-warning distance-error">' +
-                        '<i class="fa fa-exclamation-triangle"></i> ' +
+                        '<i class="fas fa-exclamation-triangle"></i> ' +
                         'No se pudo obtener tu ubicación. Puedes usar el botón "Cómo llegar" para obtener direcciones.' +
                         '</div>');
 
@@ -108,13 +108,13 @@ $(document).ready(function () {
 
                     // Re-enable button
                     $('.calculate-distance-btn').prop('disabled', false)
-                        .html('<i class="fa fa-map-marker"></i> Calcular distancia');
+                        .html('<i class="fas fa-map-marker-alt"></i> Calcular distancia');
                 }
             );
         } else {
             // Geolocation not supported
             var errorMsg = $('<div class="alert alert-warning distance-error">' +
-                '<i class="fa fa-exclamation-triangle"></i> ' +
+                '<i class="fas fa-exclamation-triangle"></i> ' +
                 'Tu navegador no soporta geolocalización. Usa el botón "Cómo llegar" para obtener direcciones.' +
                 '</div>');
 
@@ -126,7 +126,7 @@ $(document).ready(function () {
 
             // Re-enable button
             $('.calculate-distance-btn').prop('disabled', false)
-                .html('<i class="fa fa-map-marker"></i> Calcular distancia');
+                .html('<i class="fas fa-map-marker-alt"></i> Calcular distancia');
         }
     }
 
@@ -157,7 +157,7 @@ $(document).ready(function () {
         $('.distance-info').remove();
 
         var distanceInfo = $('<div class="distance-info alert alert-info">' +
-            '<i class="fa fa-map-marker"></i> ' +
+            '<i class="fas fa-map-marker-alt"></i> ' +
             'Estás a aproximadamente <strong>' + distanceKm + ' km</strong> de la academia ' +
             '(~' + walkingTime + ' minutos caminando)' +
             '</div>');
@@ -175,12 +175,12 @@ $(document).ready(function () {
         // Only add if it doesn't exist
         // if ($('.landmark-info').length === 0) {
         //     var landmarkInfo = $('<div class="landmark-info">' +
-        //         '<h4><i class="fa fa-map-signs"></i> Referencias Cercanas</h4>' +
+        //         '<h4><i class="fas fa-map-signs"></i> Referencias Cercanas</h4>' +
         //         '<ul class="landmark-list">' +
-        //         '<li><i class="fa fa-hospital-o"></i> Hospital Ramón y Cajal (5 min)</li>' +
-        //         '<li><i class="fa fa-shopping-cart"></i> Centro Comercial La Vaguada (8 min)</li>' +
-        //         '<li><i class="fa fa-tree"></i> Parque de Berlín (3 min)</li>' +
-        //         '<li><i class="fa fa-graduation-cap"></i> Universidad Autónoma de Madrid (15 min)</li>' +
+        //         '<li><i class="fas fa-hospital"></i> Hospital Ramón y Cajal (5 min)</li>' +
+        //         '<li><i class="fas fa-shopping-cart"></i> Centro Comercial La Vaguada (8 min)</li>' +
+        //         '<li><i class="fas fa-tree"></i> Parque de Berlín (3 min)</li>' +
+        //         '<li><i class="fas fa-graduation-cap"></i> Universidad Autónoma de Madrid (15 min)</li>' +
         //         '</ul>' +
         //         '</div>');
 
@@ -211,7 +211,7 @@ $(document).ready(function () {
         // Add copy address functionality (only if it doesn't exist)
         if ($('.copy-address-btn').length === 0) {
             var copyAddressBtn = $('<button class="btn btn-sm btn-default copy-address-btn" title="Copiar dirección">' +
-                '<i class="fa fa-copy"></i> Copiar dirección</button>');
+                '<i class="fas fa-copy"></i> Copiar dirección</button>');
 
             // Add after the address paragraph (before the iframe)
             $('#map .container .row .col-md-12 p.lead').after(copyAddressBtn);
@@ -220,7 +220,7 @@ $(document).ready(function () {
                 navigator.clipboard.writeText(ACADEMY_LOCATION.address).then(function () {
                     // Show success message
                     var successMsg = $('<div class="alert alert-success copy-success">' +
-                        '<i class="fa fa-check"></i> Dirección copiada al portapapeles</div>');
+                        '<i class="fas fa-check"></i> Dirección copiada al portapapeles</div>');
                     $(this).after(successMsg);
                     setTimeout(function () {
                         successMsg.fadeOut();
@@ -237,7 +237,7 @@ $(document).ready(function () {
         // Only add if it doesn't exist
         // if ($('.business-hours-map').length === 0) {
         //     var hoursInfo = $('<div class="business-hours-map">' +
-        //         '<h4><i class="fa fa-clock-o"></i> Horarios de Atención</h4>' +
+        //         '<h4><i class="fas fa-clock"></i> Horarios de Atención</h4>' +
         //         '<div class="hours-grid">' +
         //         '<div class="hours-item">' +
         //         '<strong>Lunes - Viernes:</strong><br>' +
