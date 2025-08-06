@@ -29,12 +29,12 @@
     />
     <meta
       name="description"
-      content="Academia de Jiu Jitsu Brasileño en Madrid. Clases para adultos y niños con Pedro Ottonello, cinturón negro GFTeam. Clase gratuita disponible."
+      content="Academia de Jiu-Jitsu brasileño en Madrid. Clases para adultos y niños con Pedro Ottonello, cinturón negro GFTeam. Clase gratuita disponible."
     />
     <meta name="robots" content="index, follow" />
     <meta
       name="keywords"
-      content="Brazilian Jiu Jitsu, BJJ, GFT, GFTeam, Salamanca, Madrid, España, Spain, Lasso, self improvement, teaching, classes"
+      content="Brazilian Jiu-Jitsu, BJJ, GFT, GFTeam, Salamanca, Madrid, España, Spain, Lasso, self improvement, teaching, classes"
     />
     <meta name="googlebot" content="nofollow" />
     <!-- Bootstrap Core CSS -->
@@ -76,15 +76,11 @@
     <!-- Lasso CSS and JavaScript -->
     <link href="styles/lasso.css" rel="stylesheet" type="text/css" />
 
-    <script src="scripts/lasso.js"></script>
-    <script src="scripts/lasso-cookies.js"></script>
-    <script src="scripts/lasso-map.js"></script>
-    <script src="scripts/lasso-contact.js"></script>
-
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="Lasso BJJ Madrid" />
+
     <!-- Cookie consent -->
     <link
       rel="stylesheet"
@@ -92,6 +88,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="scripts/lasso.js"></script>
+    <script src="scripts/lasso-cookies.js"></script>
+    <script src="scripts/lasso-map.js"></script>
+    <script src="scripts/lasso-contact.js"></script>
   </head>
 
   <body>
@@ -280,6 +282,85 @@
             }
 
             /* Rojo claro */
+
+            /* Cookie Policy Modal Styles */
+            #cookiePolicyModal .modal-header {
+              background: linear-gradient(135deg, #d9534f 0%, #c9302c 100%);
+              color: white;
+              border-radius: 6px 6px 0 0;
+            }
+
+            #cookiePolicyModal .modal-header .close {
+              color: white;
+              opacity: 0.8;
+              text-shadow: none;
+            }
+
+            #cookiePolicyModal .modal-header .close:hover {
+              opacity: 1;
+            }
+
+            #cookiePolicyModal .modal-title {
+              font-weight: 600;
+            }
+
+            .cookie-policy-content {
+              max-height: 60vh;
+              overflow-y: auto;
+              padding-right: 10px;
+            }
+
+            .cookie-policy-content h3 {
+              color: #d9534f;
+              margin-top: 25px;
+              margin-bottom: 15px;
+            }
+
+            .cookie-policy-content h4 {
+              color: #333;
+              margin-top: 20px;
+              margin-bottom: 10px;
+            }
+
+            .cookie-policy-content h5 {
+              color: #666;
+              margin-top: 15px;
+              margin-bottom: 8px;
+            }
+
+            .cookie-policy-content ul {
+              margin-bottom: 15px;
+            }
+
+            .cookie-policy-content li {
+              margin-bottom: 5px;
+            }
+
+            #cookiePolicyModal .modal-footer {
+              border-top: 1px solid #e5e5e5;
+              padding: 15px 20px;
+            }
+
+            #cookiePolicyModal .btn-primary {
+              background-color: #d9534f;
+              border-color: #d9534f;
+            }
+
+            #cookiePolicyModal .btn-primary:hover {
+              background-color: #c9302c;
+              border-color: #c9302c;
+            }
+
+            /* Mobile responsiveness for modal */
+            @media (max-width: 767px) {
+              #cookiePolicyModal .modal-dialog {
+                margin: 10px;
+              }
+
+              .cookie-policy-content {
+                max-height: 50vh;
+              }
+            }
           </style>
           <p class="lead">
             Disfruta de una clase gratuita. ¡Descubre todo lo que podemos
@@ -584,7 +665,7 @@
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        ¿Qué es el Jiu Jitsu Brasileño?
+                        ¿Qué es el Jiu-Jitsu brasileño?
                       </a>
                     </h4>
                   </div>
@@ -595,11 +676,12 @@
                     aria-labelledby="headingOne"
                   >
                     <div class="panel-body">
-                      El Jiu-Jitsu brasileño (BJJ) es un arte marcial enfocado
-                      en el control, la técnica y la lucha en el suelo. Enseña a
-                      utilizar el apalancamiento y la estrategia para someter a
-                      un oponente, sin necesidad de fuerza bruta. Es ideal para
-                      todas las edades y niveles de condición física.
+                      El Jiu-Jitsu brasileño (BJJ) es un arte marcial centrado
+                      en el control, la técnica y la lucha en el suelo. Se basa
+                      en el uso eficiente del cuerpo y la estrategia para
+                      someter al oponente, sin necesidad de recurrir a la fuerza
+                      bruta. Es ideal para todas las edades y niveles de
+                      condición física.
                     </div>
                   </div>
                 </div>
@@ -677,7 +759,7 @@
                         aria-expanded="false"
                         aria-controls="collapseFour"
                       >
-                        ¿Es seguro practicar Jiu Jitsu?
+                        ¿Es seguro practicar Jiu-Jitsu?
                       </a>
                     </h4>
                   </div>
@@ -688,7 +770,7 @@
                     aria-labelledby="headingFour"
                   >
                     <div class="panel-body">
-                      Sí, el Jiu Jitsu es una disciplina segura cuando se
+                      Sí, el Jiu-Jitsu es una disciplina segura cuando se
                       practica bajo la supervisión de instructores calificados.
                       Se hace énfasis en el respeto mutuo, el control y la
                       prevención de lesiones.
@@ -720,7 +802,7 @@
                   >
                     <div class="panel-body">
                       Sí, ofrecemos clases adaptadas para niños desde los
-                      <strong>4 años</strong>. Son ideales para mejorar la
+                      <strong>5 años</strong>. Son ideales para mejorar la
                       coordinación, la autoestima, la disciplina y la
                       sociabilidad de los más pequeños.
                     </div>
@@ -1168,7 +1250,10 @@
               <span>Todos los derechos reservados</span>
             </p>
             <p class="copyright text-muted small">
-              <a href="politica-de-cookies.html">Política de Cookies</a> |
+              <a href="#" data-toggle="modal" data-target="#cookiePolicyModal"
+                >Política de Cookies</a
+              >
+              |
               <a href="mailto:contacto@lassobjjmadrid.com">Contacto Legal</a>
             </p>
           </div>
@@ -1193,7 +1278,7 @@
               <br />
               <small
                 >Al continuar, aceptas nuestra
-                <a href="politica-de-cookies.html" target="_blank"
+                <a href="#" data-toggle="modal" data-target="#cookiePolicyModal"
                   >Política de Cookies</a
                 >.</small
               >
@@ -1285,6 +1370,193 @@
                 19:00-22:00 | Sábados 11:00-13:00
               </small>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cookie Policy Modal -->
+    <div
+      class="modal fade"
+      id="cookiePolicyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="cookiePolicyModalLabel"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Cerrar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="cookiePolicyModalLabel">
+              <i class="fas fa-cookie-bite"></i> Política de Cookies
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div class="cookie-policy-content">
+              <h3>¿Qué son las cookies?</h3>
+              <p class="lead">
+                Las cookies son pequeños archivos de texto que se almacenan en
+                tu dispositivo cuando visitas un sitio web. Nos ayudan a mejorar
+                tu experiencia de navegación y a entender cómo utilizas nuestro
+                sitio web.
+              </p>
+
+              <h3>¿Qué cookies utilizamos?</h3>
+
+              <h4>Cookies Esenciales</h4>
+              <p>
+                Estas cookies son necesarias para el funcionamiento básico del
+                sitio web y no se pueden desactivar:
+              </p>
+              <ul>
+                <li>
+                  <strong>Cookies de sesión:</strong> Mantienen tu sesión activa
+                  mientras navegas por el sitio
+                </li>
+                <li>
+                  <strong>Cookies de preferencias:</strong> Recuerdan tus
+                  preferencias de cookies
+                </li>
+              </ul>
+
+              <h4>Cookies de Análisis</h4>
+              <p>
+                Utilizamos Google Analytics para entender cómo los visitantes
+                interactúan con nuestro sitio web:
+              </p>
+              <ul>
+                <li>
+                  <strong>Google Analytics (_ga, _ga_*, _gid):</strong> Nos
+                  ayudan a analizar el tráfico del sitio web y mejorar nuestros
+                  servicios
+                </li>
+                <li>
+                  <strong>Google Tag Manager:</strong> Gestiona las etiquetas de
+                  seguimiento de manera eficiente
+                </li>
+              </ul>
+
+              <h4>Cookies de Funcionalidad</h4>
+              <p>
+                Estas cookies mejoran la funcionalidad y personalización del
+                sitio web:
+              </p>
+              <ul>
+                <li>
+                  <strong>Cookies de idioma:</strong> Recuerdan tu idioma
+                  preferido
+                </li>
+                <li>
+                  <strong>Cookies de ubicación:</strong> Solo si das permiso,
+                  para calcular distancias a la academia
+                </li>
+              </ul>
+
+              <h3>¿Cómo gestionar las cookies?</h3>
+
+              <h4>Configuración del navegador</h4>
+              <p>
+                Puedes controlar y/o eliminar las cookies como desees. Puedes
+                eliminar todas las cookies que ya están en tu dispositivo y
+                configurar la mayoría de los navegadores para evitar que se
+                instalen.
+              </p>
+
+              <h5>Instrucciones por navegador:</h5>
+              <ul>
+                <li>
+                  <strong>Chrome:</strong> Configuración > Privacidad y
+                  seguridad > Cookies y otros datos de sitios
+                </li>
+                <li>
+                  <strong>Firefox:</strong> Opciones > Privacidad y seguridad >
+                  Cookies y datos del sitio
+                </li>
+                <li>
+                  <strong>Safari:</strong> Preferencias > Privacidad > Cookies y
+                  datos de sitios web
+                </li>
+                <li>
+                  <strong>Edge:</strong> Configuración > Cookies y permisos del
+                  sitio
+                </li>
+              </ul>
+
+              <h4>Herramientas de terceros</h4>
+              <p>
+                También puedes optar por no participar en el seguimiento de
+                Google Analytics visitando:
+                <a
+                  href="https://tools.google.com/dlpage/gaoptout"
+                  target="_blank"
+                  >https://tools.google.com/dlpage/gaoptout</a
+                >
+              </p>
+
+              <h3>Cookies de terceros</h3>
+              <p>
+                Nuestro sitio web puede contener enlaces a sitios web de
+                terceros. No somos responsables de las políticas de privacidad o
+                cookies de estos sitios web de terceros.
+              </p>
+
+              <h4>Servicios de terceros que utilizamos:</h4>
+              <ul>
+                <li>
+                  <strong>Google Analytics:</strong> Para análisis de tráfico
+                  web
+                </li>
+                <li>
+                  <strong>Google Maps:</strong> Para mostrar nuestra ubicación
+                </li>
+                <li>
+                  <strong>WhatsApp:</strong> Para facilitar la comunicación
+                </li>
+                <li>
+                  <strong>Instagram:</strong> Para mostrar contenido de redes
+                  sociales
+                </li>
+              </ul>
+
+              <h3>Consentimiento</h3>
+              <p>
+                Al continuar navegando por nuestro sitio web después de ver el
+                aviso de cookies, consientes el uso de cookies según se describe
+                en esta política. Puedes retirar tu consentimiento en cualquier
+                momento cambiando la configuración de tu navegador.
+              </p>
+
+              <div class="alert alert-info" style="margin-top: 20px">
+                <h4><i class="fas fa-info-circle"></i> Información Legal</h4>
+                <p><strong>Última actualización:</strong> Enero 2025</p>
+                <p><strong>Responsable:</strong> Lasso BJJ Madrid Academy</p>
+                <p>
+                  Esta política cumple con el Reglamento General de Protección
+                  de Datos (RGPD) de la Unión Europea y la Ley Orgánica de
+                  Protección de Datos Personales y garantía de los derechos
+                  digitales (LOPDGDD) de España.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <i class="fas fa-times"></i> Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="window.revokeCookieConsent && window.revokeCookieConsent()"
+            >
+              <i class="fas fa-cog"></i> Gestionar Cookies
+            </button>
           </div>
         </div>
       </div>
