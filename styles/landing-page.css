@@ -168,3 +168,174 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+/* Professional Footer Map Styling */
+.footer-map-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8e8e8;
+    margin-top: 10px;
+}
+
+.footer-map-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.footer-map {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.footer-map iframe {
+    transition: transform 0.3s ease;
+}
+
+.footer-map:hover iframe {
+    transform: scale(1.02);
+}
+
+.map-info {
+    text-align: center;
+}
+
+.map-address {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.map-address i {
+    color: #777;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.map-contact {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.map-contact i {
+    color: #777;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.map-contact a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.map-contact a:hover {
+    color: #004494;
+    text-decoration: underline;
+}
+
+/* Contact Modal Styling - Sober & Professional */
+#contactModal .modal-header {
+    background-color: #f8f8f8;
+    color: #333;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 25px;
+}
+
+#contactModal .modal-header .close {
+    color: #777;
+    opacity: 0.6;
+    text-shadow: none;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#contactModal .modal-header .close:hover {
+    opacity: 0.9;
+    color: #333;
+}
+
+#contactModal .modal-title {
+    font-weight: 400;
+    font-size: 20px;
+    color: #333;
+}
+
+#contactModal .modal-title i {
+    margin-right: 10px;
+    color: #777;
+    font-size: 18px;
+}
+
+#contactModal .modal-body {
+    padding: 30px 25px;
+}
+
+/* Success message styling in modal - subtle and elegant */
+#contactSuccess {
+    border-radius: 6px;
+    border-left: 4px solid #28a745;
+    background-color: #f8fff9;
+    border-color: #d4edda;
+    color: #155724;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+#contactError {
+    border-radius: 6px;
+    border-left: 4px solid #dc3545;
+    background-color: #fff5f5;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .footer-map-container {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-map-container {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    
+    .footer-map iframe {
+        height: 150px;
+    }
+    
+    .footer-map-title {
+        font-size: 16px;
+    }
+    
+    .list-footer li {
+        display: block;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    
+    .footer-menu-divider {
+        display: none;
+    }
+    
+    .list-footer {
+        text-align: center;
+        padding-left: 0;
+    }
+}

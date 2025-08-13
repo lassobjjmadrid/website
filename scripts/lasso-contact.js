@@ -296,10 +296,15 @@ Fecha: ${new Date().toLocaleString('es-ES')}
         $('#contactSuccess').slideDown();
         $('#contactError').slideUp();
 
-        // Auto-hide after 10 seconds
+        // Auto-close modal after 3 seconds
         setTimeout(() => {
+            $('#contactModal').modal('hide');
+        }, 3000);
+
+        // Auto-hide success message after modal closes
+        $('#contactModal').on('hidden.bs.modal', function () {
             $('#contactSuccess').slideUp();
-        }, 10000);
+        });
 
         // Scroll to success message
         $('html, body').animate({
