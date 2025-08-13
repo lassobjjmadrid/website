@@ -244,21 +244,26 @@ p.copyright {
     text-decoration: underline;
 }
 
-/* Contact Modal Styling - Sober & Professional */
+/* Contact Modal Styling - Minimalistic & Compact */
+#contactModal .modal-dialog {
+    max-width: 480px;
+}
+
 #contactModal .modal-header {
     background-color: #f8f8f8;
     color: #333;
     border-radius: 6px 6px 0 0;
     border-bottom: 1px solid #e5e5e5;
-    padding: 20px 25px;
+    padding: 15px 20px;
 }
 
 #contactModal .modal-header .close {
     color: #777;
     opacity: 0.6;
     text-shadow: none;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
+    margin-top: -2px;
 }
 
 #contactModal .modal-header .close:hover {
@@ -268,39 +273,97 @@ p.copyright {
 
 #contactModal .modal-title {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     color: #333;
+    margin: 0;
 }
 
 #contactModal .modal-title i {
-    margin-right: 10px;
+    margin-right: 8px;
     color: #777;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #contactModal .modal-body {
-    padding: 30px 25px;
+    padding: 20px;
 }
 
-/* Success message styling in modal - subtle and elegant */
+/* Compact form styling */
+#contactModal .contact-form-container {
+    margin: 0;
+}
+
+#contactModal .form-group {
+    margin-bottom: 15px;
+}
+
+#contactModal .form-group:last-of-type {
+    margin-bottom: 10px;
+}
+
+#contactModal .form-control {
+    padding: 8px 12px;
+    font-size: 14px;
+    height: auto;
+}
+
+#contactModal textarea.form-control {
+    padding: 10px 12px;
+    min-height: 80px;
+    resize: vertical;
+}
+
+#contactModal label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#contactModal .contact-submit-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Minimalist validation - just red borders */
+#contactModal .form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.1rem rgba(220, 53, 69, 0.15);
+}
+
+#contactModal .form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.1rem rgba(40, 167, 69, 0.15);
+}
+
+/* Hide validation text messages */
+#contactModal .invalid-feedback {
+    display: none !important;
+}
+
+/* Success message styling in modal - compact and elegant */
 #contactSuccess {
-    border-radius: 6px;
-    border-left: 4px solid #28a745;
+    border-radius: 4px;
+    border-left: 3px solid #28a745;
     background-color: #f8fff9;
     border-color: #d4edda;
     color: #155724;
-    padding: 15px 20px;
-    margin-top: 20px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 #contactError {
-    border-radius: 6px;
-    border-left: 4px solid #dc3545;
+    border-radius: 4px;
+    border-left: 3px solid #dc3545;
     background-color: #fff5f5;
     border-color: #f5c6cb;
     color: #721c24;
-    padding: 15px 20px;
-    margin-top: 20px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 /* Responsive Design */
@@ -337,5 +400,23 @@ p.copyright {
     .list-footer {
         text-align: center;
         padding-left: 0;
+    }
+    
+    /* Compact contact modal on mobile */
+    #contactModal .modal-dialog {
+        margin: 10px;
+        max-width: none;
+    }
+    
+    #contactModal .modal-body {
+        padding: 15px;
+    }
+    
+    #contactModal .modal-header {
+        padding: 12px 15px;
+    }
+    
+    #contactModal .modal-title {
+        font-size: 16px;
     }
 }

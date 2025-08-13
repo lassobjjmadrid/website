@@ -83,13 +83,11 @@ $(document).ready(function () {
         }
 
 
-        // Apply validation styling
+        // Apply validation styling - minimalist approach with just border colors
         if (isValid) {
             field.removeClass('is-invalid').addClass('is-valid');
-            field.siblings('.invalid-feedback').hide();
         } else {
             field.removeClass('is-valid').addClass('is-invalid');
-            field.siblings('.invalid-feedback').text(errorMessage).show();
         }
 
         return isValid;
@@ -164,12 +162,10 @@ $(document).ready(function () {
         });
 
         if (!isFormValid) {
-            // Scroll to first error
+            // Just focus on the first invalid field without scrolling
             const firstError = form.find('.is-invalid').first();
             if (firstError.length) {
-                $('html, body').animate({
-                    scrollTop: firstError.offset().top - 100
-                }, 500);
+                firstError.focus();
             }
             return;
         }
