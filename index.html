@@ -373,6 +373,82 @@
               text-decoration: underline;
             }
 
+            /* Legal Notice Modal Styles - Sober & Professional */
+            #legalNoticeModal .modal-header {
+              background-color: #f8f8f8;
+              color: #333;
+              border-radius: 6px 6px 0 0;
+              border-bottom: 1px solid #e5e5e5;
+              padding: 20px 25px;
+            }
+
+            #legalNoticeModal .modal-header .close {
+              color: #777;
+              opacity: 0.6;
+              text-shadow: none;
+              font-size: 24px;
+              font-weight: 300;
+            }
+
+            #legalNoticeModal .modal-header .close:hover {
+              opacity: 0.9;
+              color: #333;
+            }
+
+            #legalNoticeModal .modal-title {
+              font-weight: 400;
+              font-size: 20px;
+              color: #333;
+            }
+
+            #legalNoticeModal .modal-title i {
+              margin-right: 10px;
+              color: #777;
+              font-size: 18px;
+            }
+
+            #legalNoticeModal .modal-footer {
+              border-top: 1px solid #e5e5e5;
+              padding: 20px 25px;
+              background-color: #fafafa;
+            }
+
+            #legalNoticeModal .btn-default {
+              background-color: #f8f8f8;
+              border-color: #ddd;
+              color: #555;
+              font-weight: 500;
+              padding: 10px 20px;
+            }
+
+            #legalNoticeModal .btn-default:hover {
+              background-color: #e8e8e8;
+              border-color: #ccc;
+              color: #333;
+            }
+
+            .legal-notice-content {
+              padding: 10px 0;
+            }
+
+            .legal-notice-content p {
+              color: #555;
+              line-height: 1.6;
+              margin-bottom: 20px;
+              text-align: justify;
+            }
+
+            .legal-notice-content a {
+              color: #0056b3;
+              text-decoration: none;
+              font-weight: 500;
+            }
+
+            .legal-notice-content a:hover {
+              color: #004494;
+              text-decoration: underline;
+            }
+
             .cookie-policy-content ul {
               margin-bottom: 15px;
             }
@@ -635,8 +711,8 @@
               Estas sesiones personalizadas permiten trabajar de forma directa
               con nuestros profesores, recibiendo atención individual y
               ajustando el entrenamiento a tus objetivos: defensa personal,
-              preparación para competiciones, corrección de técnica o mejora física
-              general.
+              preparación para competiciones, corrección de técnica o mejora
+              física general.
             </p>
 
             <p class="lead">
@@ -1069,7 +1145,7 @@
                 >Política de Cookies</a
               >
               |
-              <a href="#" data-toggle="modal" data-target="#cookiePolicyModal"
+              <a href="#" data-toggle="modal" data-target="#legalNoticeModal"
                 >Aviso Legal</a
               >
             </p>
@@ -1098,7 +1174,9 @@
                 </p>
                 <p>
                   <i class="fas fa-envelope"></i>
-                  <a href="mailto:contacto@lassobjjmadrid.com">contacto@lassobjjmadrid.com</a>
+                  <a href="mailto:contacto@lassobjjmadrid.com"
+                    >contacto@lassobjjmadrid.com</a
+                  >
                 </p>
               </div>
             </div>
@@ -1545,6 +1623,73 @@
               onclick="window.revokeCookieConsent && window.revokeCookieConsent()"
             >
               <i class="fas fa-cog"></i> Gestionar Cookies
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Legal Notice Modal -->
+    <div
+      class="modal fade"
+      id="legalNoticeModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="legalNoticeModalLabel"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Cerrar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="legalNoticeModalLabel">
+              <i class="fas fa-gavel"></i> Aviso Legal
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div class="legal-notice-content">
+              <p class="lead">
+                Este sitio web y todos sus contenidos, incluyendo los textos,
+                imágenes, sonido, vídeo y cualquier otro material, son propiedad
+                de <strong>Lasso BJJ Madrid</strong>.
+              </p>
+
+              <p class="lead">
+                <strong>Lasso BJJ Madrid</strong> no es responsable de la información que
+                se pueda obtener a través de los enlaces a sistemas externos.
+                Tanto el acceso a la web, como el uso que pueda hacerse de la
+                información contenida en la misma son de la exclusiva
+                responsabilidad de quien lo realiza.
+              </p>
+
+              <p class="lead">
+                <strong>Lasso BJJ Madrid</strong> no se hace responsable de ninguna
+                consecuencia, daño o perjuicio que pudieran derivarse de dicho
+                acceso o uso de información, con excepción de todas aquellas
+                actuaciones que resulten de la aplicación de las disposiciones
+                legales a las que deba someterse en el estricto ejercicio de sus
+                competencias. Si es propietario de los derechos de autor de
+                algún contenido que se visualiza en uno de nuestros sitios y
+                desea que lo quitemos o lo modifiquemos, por favor póngase en
+                contacto con nosotros en la dirección de e-mail
+                <a href="mailto:contacto@lassobjjmadrid.com"
+                  >contacto@lassobjjmadrid.com</a
+                >
+                y actuaremos lo antes posible. Si detecta alguna documentación o
+                información errónea le agradeceremos que nos lo comunique para
+                proceder a su corrección.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <i class="fas fa-times"></i> Cerrar
             </button>
           </div>
         </div>
