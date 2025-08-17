@@ -75,7 +75,7 @@
     ></script>
     <!-- Lasso CSS and JavaScript -->
     <link href="styles/lasso.css" rel="stylesheet" type="text/css" />
-
+    <link rel="icon" href="images/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -447,6 +447,95 @@
             .legal-notice-content a:hover {
               color: #004494;
               text-decoration: underline;
+            }
+
+            /* Privacy Policy Modal Styles - Sober & Professional */
+            #privacyPolicyModal .modal-header {
+              background-color: #f8f8f8;
+              color: #333;
+              border-radius: 6px 6px 0 0;
+              border-bottom: 1px solid #e5e5e5;
+              padding: 20px 25px;
+            }
+
+            #privacyPolicyModal .modal-header .close {
+              color: #777;
+              opacity: 0.6;
+              text-shadow: none;
+              font-size: 24px;
+              font-weight: 300;
+            }
+
+            #privacyPolicyModal .modal-header .close:hover {
+              opacity: 0.9;
+              color: #333;
+            }
+
+            #privacyPolicyModal .modal-title {
+              font-weight: 400;
+              font-size: 20px;
+              color: #333;
+            }
+
+            #privacyPolicyModal .modal-title i {
+              margin-right: 10px;
+              color: #777;
+              font-size: 18px;
+            }
+
+            #privacyPolicyModal .modal-footer {
+              border-top: 1px solid #e5e5e5;
+              padding: 20px 25px;
+              background-color: #fafafa;
+            }
+
+            #privacyPolicyModal .btn-default {
+              background-color: #f8f8f8;
+              border-color: #ddd;
+              color: #555;
+              font-weight: 500;
+              padding: 10px 20px;
+            }
+
+            #privacyPolicyModal .btn-default:hover {
+              background-color: #e8e8e8;
+              border-color: #ccc;
+              color: #333;
+            }
+
+            .privacy-policy-content {
+              padding: 10px 0;
+              max-height: 60vh;
+              overflow-y: auto;
+            }
+
+            .privacy-policy-content p {
+              color: #555;
+              line-height: 1.6;
+              margin-bottom: 20px;
+              text-align: justify;
+            }
+
+            .privacy-policy-content a {
+              color: #0056b3;
+              text-decoration: none;
+              font-weight: 500;
+            }
+
+            .privacy-policy-content a:hover {
+              color: #004494;
+              text-decoration: underline;
+            }
+
+            /* Mobile responsiveness for privacy policy modal */
+            @media (max-width: 767px) {
+              #privacyPolicyModal .modal-dialog {
+                margin: 10px;
+              }
+
+              .privacy-policy-content {
+                max-height: 50vh;
+              }
             }
 
             .cookie-policy-content ul {
@@ -1145,6 +1234,10 @@
                 >Política de Cookies</a
               >
               |
+              <a href="#" data-toggle="modal" data-target="#privacyPolicyModal"
+                >Política de Privacidad</a
+              >
+              |
               <a href="#" data-toggle="modal" data-target="#legalNoticeModal"
                 >Aviso Legal</a
               >
@@ -1629,6 +1722,130 @@
       </div>
     </div>
 
+    <!-- Privacy Policy Modal -->
+    <div
+      class="modal fade"
+      id="privacyPolicyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="privacyPolicyModalLabel"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Cerrar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="privacyPolicyModalLabel">
+              <i class="fas fa-shield-alt"></i> Política de Privacidad
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div class="privacy-policy-content">
+              <p class="lead">
+                Al utilizar el presente Sitio Web y/o al comunicarse
+                electrónicamente con Lasso BJJ Madrid se recogen y
+                tratan los datos personales de cada Usuario. El tratamiento de
+                estos datos se rige por la presente Política de Privacidad.
+              </p>
+
+              <p class="lead">
+                El responsable del tratamiento de los datos personales que el
+                Usuario facilite al acceder y utilizar el Sitio Web y con
+                posterioridad es el siguiente:
+              </p>
+
+              <div class="text-center" style="margin: 30px 0">
+                <p><strong>Lasso BJJ Madrid, SL</strong></p>
+                <p>
+                  <strong>Calle Londres, 22. 28028 Madrid</strong>
+                </p>
+              </div>
+
+              <p class="lead">
+                El Usuario puede contactar con el responsable de la protección
+                de datos de Lasso BJJ Madrid en la siguiente dirección de correo
+                electrónico:
+                <a href="mailto:contacto@lassobjjmadrid.com"
+                  >contacto@lassobjjmadrid.com</a
+                >
+              </p>
+
+              <p class="lead">
+                Los datos personales de los Usuarios se recogerán y tratarán con
+                la finalidad de gestionar la relación con Lasso BJJ Madrid, para utilizar
+                su información de contacto y el envío recurrente de información
+                jurídica, eventos u otras actividades profesionales promovidas
+                por este despacho.
+              </p>
+
+              <p class="lead">
+                Lasso BJJ Madrid recogerá y tratará sus datos mientras la relación siga
+                vigente y, en su caso, el Usuario no revoque el consentimiento
+                que ha prestado al tratamiento de los mismos.
+              </p>
+
+              <p class="lead">
+                En el caso de que los Usuarios proporcionen datos personales de
+                terceras personas, estos garantizan que les ha informado, con
+                carácter previo a su inclusión, de los términos contenidos en la
+                presente Política de Privacidad, respondiendo personalmente
+                frente a este despacho de cuantos daños y perjuicios puedan
+                derivarse en caso de contravención.
+              </p>
+
+              <p class="lead">
+                Lasso BJJ Madrid hará uso de esos datos cuando sea estrictamente
+                necesario para gestionar y mantener la relación con este
+                despacho y solo tendrán acceso a ellos aquellos terceros con los
+                que Lasso BJJ Madrid esté contractual o legalmente obligado a
+                facilitarlos.
+              </p>
+
+              <p class="lead">
+                Los datos de los Usuarios serán tratados con el nivel de
+                protección de acuerdo a las normas aplicables sobre Protección
+                de Datos.
+              </p>
+
+              <p class="lead">
+                El Usuario se compromete a notificar cualquier modificación o
+                cambio de los datos personales que haya facilitado. Cualquier
+                daño o pérdida causado al Sitio Web de Lasso BJJ Madrid o a cualquier
+                tercero mediante la comunicación de información errónea,
+                inexacta o incompleta será responsabilidad única y exclusiva del
+                Usuario.
+              </p>
+
+              <p class="lead">
+                Informamos que el Usuario tiene derecho, en todo momento, de
+                rectificación o supresión de datos, limitación de su tratamiento
+                y revocación del consentimiento prestado, dirigiéndose por
+                escrito a la dirección Calle de Calle Londres, 22
+                28028 Madrid, o a la dirección de correo electrónico
+                <a href="mailto:contacto@lassobjjmadrid.com"
+                  >contacto@lassobjjmadrid.com</a
+                >, indicando claramente el derecho que desea ejercitar y
+                acompañando su Documento Nacional de Identidad o similar que
+                acredite su identidad. Asimismo, podrá presentar reclamación
+                ante la Agencia de Protección de Datos.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <i class="fas fa-times"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Legal Notice Modal -->
     <div
       class="modal fade"
@@ -1661,23 +1878,23 @@
               </p>
 
               <p class="lead">
-                <strong>Lasso BJJ Madrid</strong> no es responsable de la información que
-                se pueda obtener a través de los enlaces a sistemas externos.
-                Tanto el acceso a la web, como el uso que pueda hacerse de la
-                información contenida en la misma son de la exclusiva
-                responsabilidad de quien lo realiza.
+                <strong>Lasso BJJ Madrid</strong> no es responsable de la
+                información que se pueda obtener a través de los enlaces a
+                sistemas externos. Tanto el acceso a la web, como el uso que
+                pueda hacerse de la información contenida en la misma son de la
+                exclusiva responsabilidad de quien lo realiza.
               </p>
 
               <p class="lead">
-                <strong>Lasso BJJ Madrid</strong> no se hace responsable de ninguna
-                consecuencia, daño o perjuicio que pudieran derivarse de dicho
-                acceso o uso de información, con excepción de todas aquellas
-                actuaciones que resulten de la aplicación de las disposiciones
-                legales a las que deba someterse en el estricto ejercicio de sus
-                competencias. Si es propietario de los derechos de autor de
-                algún contenido que se visualiza en uno de nuestros sitios y
-                desea que lo quitemos o lo modifiquemos, por favor póngase en
-                contacto con nosotros en la dirección de e-mail
+                <strong>Lasso BJJ Madrid</strong> no se hace responsable de
+                ninguna consecuencia, daño o perjuicio que pudieran derivarse de
+                dicho acceso o uso de información, con excepción de todas
+                aquellas actuaciones que resulten de la aplicación de las
+                disposiciones legales a las que deba someterse en el estricto
+                ejercicio de sus competencias. Si es propietario de los derechos
+                de autor de algún contenido que se visualiza en uno de nuestros
+                sitios y desea que lo quitemos o lo modifiquemos, por favor
+                póngase en contacto con nosotros en la dirección de e-mail
                 <a href="mailto:contacto@lassobjjmadrid.com"
                   >contacto@lassobjjmadrid.com</a
                 >
