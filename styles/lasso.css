@@ -977,6 +977,109 @@ select#interest option:selected,
   border-color: #f5c6cb;
   color: #721c24;
 }
+/* === Affiliation Banner Styles === */
+.affiliation-banner {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.affiliation-banner .section-heading {
+  margin-bottom: 40px;
+  font-size: 2.2em;
+  color: #333;
+}
+
+.federation-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.federation-member {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.federation-member:hover {
+  transform: translateY(-5px);
+}
+
+.federation-logo {
+  max-width: 150px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transition: filter 0.3s ease;
+}
+
+.federation-member:hover .federation-logo {
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15));
+}
+
+.federation-member h4 {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.federation-member a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.federation-member a:hover {
+  text-decoration: none;
+  color: #d9534f;
+}
+
+.federation-member a:hover h4 {
+  color: #d9534f;
+}
+
+/* Mobile responsiveness for affiliation banner */
+@media (max-width: 767px) {
+  .affiliation-banner {
+    padding: 30px 15px;
+  }
+  
+  .affiliation-banner .section-heading {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+  
+  .federation-logos {
+    gap: 40px;
+    flex-direction: column;
+  }
+  
+  .federation-logo {
+    max-width: 120px;
+    max-height: 100px;
+  }
+  
+  .federation-member h4 {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .federation-logos {
+    gap: 30px;
+  }
+  
+  .federation-logo {
+    max-width: 100px;
+    max-height: 80px;
+  }
+}
+
 /* === 
 Free Class Modal Styles === */
 #freeClassModal .modal-header {
