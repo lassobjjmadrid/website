@@ -45,3 +45,14 @@ CVS
 Backup[ ]of[ ]*.pages/
 Backup[ ]of[ ]*.key/
 Backup[ ]of[ ]*.numbers/
+
+
+
+# Ignore generated CSV exports
+*.csv
+/out*
+/output*
+/exports*
+__pycache__/
+*.pyc
+.env
