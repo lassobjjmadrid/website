@@ -1,0 +1,501 @@
+{
+    "campaigns": [
+      {
+        "name": "Lanzamiento BJJ Adultos (ES/EN)",
+        "type": "PerformanceMax",
+        "objective": "LEADS",
+        "geo_target": {
+          "city": "Madrid",
+          "country": "ES",
+          "radius_km": 5
+        },
+        "languages": ["es", "en"],
+        "url": "https://lassobjjmadrid.com",
+        "offer": "Clase de prueba gratuita",
+        "asset_groups": [
+          {
+            "name": "Adultos - ES",
+            "final_url": "https://lassobjjmadrid.com",
+            "brand_guidelines": {
+              "business_name": "Lasso BJJ Madrid",
+              "logo_urls": [],
+              "primary_color_hex": null
+            },
+            "assets": {
+              "headlines_short_30": [
+                "Prueba BJJ gratis en Madrid",
+                "Defiéndete con Jiu-Jitsu",
+                "Clase gratis de Jiu-Jitsu",
+                "Entrena cerca de casa",
+                "Mejora tu forma física hoy",
+                "Aprende BJJ paso a paso",
+                "Tu nueva academia en Madrid",
+                "Clase de prueba sin coste",
+                "Descubre el Jiu-Jitsu ahora",
+                "Deporte y disciplina",
+                "Comunidad BJJ en Madrid",
+                "Primera clase gratuita",
+                "Profesores con experiencia",
+                "BJJ para todos los niveles",
+                "¡Empieza gratis ya!"
+              ],
+              "headlines_long_90": [
+                "Ven a tu primera clase de Jiu-Jitsu en Madrid totalmente gratis",
+                "Descubre el poder del BJJ: defensa personal, deporte y comunidad",
+                "Aprende Jiu-Jitsu cerca de ti con profesores expertos y clase gratis",
+                "Nueva academia en Madrid: mejora tu condición física con BJJ",
+                "Vive la experiencia del Jiu-Jitsu en un ambiente motivador"
+              ],
+              "descriptions_90": [
+                "Prueba una clase gratis de Jiu-Jitsu en Madrid. ¡Apúntate ya!",
+                "Entrena en un ambiente cercano y motivador. Clase sin coste.",
+                "Mejora tu fuerza y defensa personal con nuestra clase gratuita.",
+                "Únete a la comunidad BJJ de Madrid con tu primera clase gratis."
+              ],
+              "descriptions_long_180": [
+                "Empieza tu camino en Brazilian Jiu-Jitsu con una clase gratis en Madrid. Te esperan profesores expertos y un ambiente cercano.",
+                "Mejora tu condición física, aprende defensa personal y disfruta de un nuevo deporte. Primera clase gratuita en nuestra academia.",
+                "Conoce nuestra comunidad de Jiu-Jitsu en Madrid. Entrena con pasión y empieza sin coste con tu clase de prueba.",
+                "Descubre el equilibrio entre disciplina, deporte y diversión. Apúntate hoy a tu clase gratis de Jiu-Jitsu en Madrid."
+              ],
+              "call_to_action": "Sign up"
+            },
+            "signals": {
+              "search_themes": [
+                "jiu jitsu brasileño madrid",
+                "bjj madrid",
+                "clases de jiu jitsu madrid",
+                "academia de jiu jitsu madrid",
+                "escuela de bjj madrid",
+                "entrenar bjj madrid",
+                "jiu jitsu cerca de mí",
+                "jiu jitsu principiantes madrid",
+                "jiu jitsu para adultos madrid",
+                "clases defensa personal madrid",
+                "defensa personal jiu jitsu madrid",
+                "artes marciales madrid adultos",
+                "gimnasio jiu jitsu madrid",
+                "tatami jiu jitsu madrid",
+                "mejorar forma física jiu jitsu",
+                "aprender defensa personal real",
+                "inicio jiu jitsu desde cero",
+                "clase prueba jiu jitsu gratis",
+                "primera clase gratis bjj",
+                "jiu jitsu hoy madrid",
+                "bjj gi madrid",
+                "bjj no gi madrid",
+                "cambiar de academia bjj madrid",
+                "lasso bjj madrid",
+                "lasso bjj"
+              ],
+              "audience_signals_suggested": {
+                "custom_keywords": [
+                  "jiu jitsu",
+                  "bjj",
+                  "defensa personal",
+                  "artes marciales",
+                  "no-gi",
+                  "gi"
+                ],
+                "in_market_or_affinity_categories": [
+                  "Sports & Fitness Enthusiasts",
+                  "Martial Arts Fans",
+                  "Gyms & Fitness Centers",
+                  "Healthy & Active Lifestyle"
+                ]
+              }
+            }
+          },
+          {
+            "name": "Adults - EN (Expats)",
+            "final_url": "https://lassobjjmadrid.com",
+            "brand_guidelines": {
+              "business_name": "Lasso BJJ Madrid",
+              "logo_urls": [],
+              "primary_color_hex": null
+            },
+            "assets": {
+              "headlines_short_30": [
+                "Free BJJ class in Madrid",
+                "Learn Brazilian Jiu-Jitsu",
+                "Try BJJ near you",
+                "Get fitter with BJJ",
+                "New academy in Madrid",
+                "Start BJJ today",
+                "Self-defense with BJJ",
+                "First class is free",
+                "BJJ for all levels",
+                "Train close to home",
+                "Join our BJJ community",
+                "Your first class free",
+                "Expert BJJ coaches",
+                "Gi & No-Gi training",
+                "Book your free class"
+              ],
+              "headlines_long_90": [
+                "Join your first Brazilian Jiu-Jitsu class in Madrid for free",
+                "Discover BJJ: self-defense, fitness and community in Madrid",
+                "Learn BJJ near you with expert coaches — free trial class",
+                "New academy in Madrid: improve your fitness with BJJ",
+                "Experience BJJ in a motivating, friendly environment"
+              ],
+              "descriptions_90": [
+                "Book a free BJJ class in Madrid. Start today.",
+                "Friendly community and expert coaches. Free trial.",
+                "Get stronger and learn real self-defense. Join free.",
+                "Train BJJ in Madrid — your first class is on us."
+              ],
+              "descriptions_long_180": [
+                "Start your BJJ journey in Madrid with a free class. Expert coaches and a welcoming community ready to help.",
+                "Improve fitness, learn self-defense and enjoy a new sport. Your first class at our academy is free.",
+                "Meet our BJJ community in Madrid. Train with passion and begin with a free trial — no cost.",
+                "Find the balance of discipline, sport and fun. Sign up for your free BJJ class in Madrid."
+              ],
+              "call_to_action": "Sign up"
+            },
+            "signals": {
+              "search_themes": [
+                "bjj madrid",
+                "jiu jitsu madrid",
+                "brazilian jiu jitsu classes madrid",
+                "bjj near me madrid",
+                "bjj beginners madrid",
+                "free trial bjj madrid",
+                "gi bjj madrid",
+                "no gi bjj madrid",
+                "self defense madrid",
+                "martial arts madrid adults",
+                "lasso bjj madrid"
+              ],
+              "audience_signals_suggested": {
+                "custom_keywords": [
+                  "bjj madrid",
+                  "brazilian jiu jitsu madrid",
+                  "martial arts madrid",
+                  "self defense madrid"
+                ],
+                "in_market_or_affinity_categories": [
+                  "Expats in Spain",
+                  "English Speakers in Madrid",
+                  "Gyms & Fitness Centers",
+                  "Sports & Fitness Enthusiasts"
+                ]
+              }
+            }
+          }
+        ],
+        "extensions": {
+          "sitelinks": [
+            {
+              "text": "Clase de prueba gratuita",
+              "description1": "Reserva tu clase sin coste",
+              "description2": "Plazas limitadas",
+              "final_url": "https://lassobjjmadrid.com/index.html#contact",
+              "language": "es"
+            },
+            {
+              "text": "Horarios de clases",
+              "description1": "Consulta horarios de adultos y niños",
+              "description2": "Mañanas y tardes",
+              "final_url": "https://lassobjjmadrid.com/index.html#classes",
+              "language": "es"
+            },
+            {
+              "text": "Nuestra academia",
+              "description1": "Conoce quiénes somos",
+              "description2": "Filosofía y valores",
+              "final_url": "https://lassobjjmadrid.com/index.html#about",
+              "language": "es"
+            },
+            {
+              "text": "Entrenadores expertos",
+              "description1": "Experiencia en BJJ",
+              "description2": "Trato cercano",
+              "final_url": "https://lassobjjmadrid.com/index.html#team",
+              "language": "es"
+            }
+          ],
+          "callouts": [
+            "Clase de prueba gratis",
+            "Profesores experimentados",
+            "Comunidad motivadora",
+            "Entrenamiento seguro",
+            "Para todas las edades"
+          ],
+          "structured_snippets": [
+            {
+              "header": "Servicios",
+              "values": [
+                "Clases para adultos",
+                "Defensa personal",
+                "Entrenamiento de competición",
+                "Clases para niños"
+              ],
+              "language": "es"
+            },
+            {
+              "header": "Beneficios",
+              "values": [
+                "Mejora física",
+                "Confianza y disciplina",
+                "Aprende paso a paso",
+                "Ambiente cercano"
+              ],
+              "language": "es"
+            }
+          ],
+          "phone": {
+            "country_code": "ES",
+            "number": "647547358"
+          },
+          "location_extension": {
+            "linked_business_profile": true
+          }
+        }
+      },
+      {
+        "name": "Lanzamiento BJJ Niños (ES/EN)",
+        "type": "PerformanceMax",
+        "objective": "LEADS",
+        "geo_target": {
+          "city": "Madrid",
+          "country": "ES",
+          "radius_km": 5
+        },
+        "languages": ["es", "en"],
+        "url": "https://lassobjjmadrid.com",
+        "offer": "Clase de prueba gratuita",
+        "asset_groups": [
+          {
+            "name": "Niños - ES",
+            "final_url": "https://lassobjjmadrid.com",
+            "brand_guidelines": {
+              "business_name": "Lasso BJJ Madrid",
+              "logo_urls": [],
+              "primary_color_hex": null
+            },
+            "assets": {
+              "headlines_short_30": [
+                "Jiu-Jitsu para niños",
+                "Clase gratis infantil",
+                "Actividad divertida y segura",
+                "Inscripción con clase gratis",
+                "Disciplina y diversión",
+                "Deporte para niños Madrid",
+                "Prueba BJJ infantil gratis",
+                "Artes marciales para crecer",
+                "Deporte y valores",
+                "Nueva academia cerca de ti",
+                "Clase sin coste para niños",
+                "Pequeños luchadores",
+                "Confianza y respeto",
+                "Deporte divertido infantil",
+                "¡Primera clase gratuita!"
+              ],
+              "headlines_long_90": [
+                "Apunta a tus hijos a Jiu-Jitsu en Madrid con una clase gratis",
+                "Deporte, disciplina y diversión: prueba gratis BJJ infantil",
+                "Clases de artes marciales para niños cerca de casa en Madrid",
+                "Fortalece la confianza de tus hijos con una clase gratuita",
+                "Nueva academia en Madrid: Jiu-Jitsu para niños y niñas"
+              ],
+              "descriptions_90": [
+                "Prueba gratis nuestra clase de Jiu-Jitsu infantil en Madrid.",
+                "Diversión, respeto y deporte en una clase gratuita para niños.",
+                "Clases cerca de ti. ¡Primera clase sin coste!",
+                "Ayuda a tus hijos a ganar confianza con BJJ. Clase gratis."
+              ],
+              "descriptions_long_180": [
+                "Da a tus hijos la oportunidad de entrenar Jiu-Jitsu en Madrid. Prueba gratuita para descubrir disciplina, respeto y diversión en un entorno seguro.",
+                "Actividad extraescolar que combina deporte, confianza y valores. Primera clase gratuita en nuestra academia de Jiu-Jitsu infantil.",
+                "Nueva academia de Brazilian Jiu-Jitsu en Madrid. Trae a tus hijos y prueba gratis nuestras clases para todas las edades.",
+                "Elige un deporte que aporta seguridad, confianza y disciplina. Clase de prueba gratuita de Jiu-Jitsu infantil en Madrid."
+              ],
+              "call_to_action": "Sign up"
+            },
+            "signals": {
+              "search_themes": [
+                "jiu jitsu para niños madrid",
+                "bjj infantil madrid",
+                "artes marciales niños madrid",
+                "clases extraescolares madrid artes marciales",
+                "deporte para niños madrid",
+                "actividades después del cole madrid",
+                "disciplina y respeto niños deporte",
+                "confianza y autoestima niños deporte",
+                "defensa personal niños madrid",
+                "psicomotricidad artes marciales",
+                "clase gratis jiu jitsu niños",
+                "primera clase gratuita niños bjj",
+                "jiu jitsu 5 a 12 años madrid",
+                "artes marciales adolescentes madrid",
+                "bjj infantil cerca de mí",
+                "artes marciales niños 2 a 5 km",
+                "jiu jitsu niños hoy madrid",
+                "actividad segura para niños madrid",
+                "deporte con valores madrid",
+                "lasso bjj madrid"
+              ],
+              "audience_signals_suggested": {
+                "custom_keywords": [
+                  "artes marciales niños",
+                  "actividades extraescolares",
+                  "deporte infantil",
+                  "jiu jitsu niños"
+                ],
+                "in_market_or_affinity_categories": [
+                  "Parents of Preschoolers",
+                  "Parents of School-Age Children",
+                  "Family-Focused",
+                  "Kids’ Sports Programs"
+                ]
+              }
+            }
+          },
+          {
+            "name": "Kids - EN (Expats)",
+            "final_url": "https://lassobjjmadrid.com",
+            "brand_guidelines": {
+              "business_name": "Lasso BJJ Madrid",
+              "logo_urls": [],
+              "primary_color_hex": null
+            },
+            "assets": {
+              "headlines_short_30": [
+                "Kids’ Jiu-Jitsu Madrid",
+                "Free class for kids",
+                "Fun & safe activity",
+                "Enroll with free class",
+                "Discipline and fun",
+                "After-school sport",
+                "Try BJJ for kids free",
+                "Martial arts to grow",
+                "Confidence & values",
+                "New academy near you",
+                "No-cost first class",
+                "Young grapplers",
+                "Build respect & focus",
+                "Fun sport for kids",
+                "Book a free trial"
+              ],
+              "headlines_long_90": [
+                "Sign your kids up for Jiu-Jitsu in Madrid with a free class",
+                "Sport, discipline and fun: free BJJ trial for kids",
+                "Martial arts for kids near you in Madrid — try for free",
+                "Boost your child’s confidence with a free class",
+                "New academy in Madrid: Brazilian Jiu-Jitsu for kids"
+              ],
+              "descriptions_90": [
+                "Free Jiu-Jitsu class for kids in Madrid. Join now.",
+                "Fun, respect and sport — free kids’ trial class.",
+                "Martial arts near you. First class at no cost.",
+                "Help your child gain confidence with BJJ — free trial."
+              ],
+              "descriptions_long_180": [
+                "Give your kids the chance to train Jiu-Jitsu in Madrid. Free trial to discover discipline, respect and fun in a safe environment.",
+                "After-school activity that blends sport, confidence and values. First class is free at our kids’ BJJ academy.",
+                "New Brazilian Jiu-Jitsu academy in Madrid. Bring your kids and try our classes for free.",
+                "Choose a sport that builds safety, confidence and discipline. Free kids’ Jiu-Jitsu trial in Madrid."
+              ],
+              "call_to_action": "Sign up"
+            },
+            "signals": {
+              "search_themes": [
+                "kids jiu jitsu madrid",
+                "children martial arts madrid",
+                "bjj kids madrid",
+                "after school martial arts madrid",
+                "free trial kids jiu jitsu madrid",
+                "martial arts for children madrid",
+                "confidence for kids sport madrid",
+                "self defense kids madrid",
+                "lasso bjj madrid"
+              ],
+              "audience_signals_suggested": {
+                "custom_keywords": [
+                  "kids martial arts madrid",
+                  "after school madrid",
+                  "bjj kids madrid"
+                ],
+                "in_market_or_affinity_categories": [
+                  "Parents of School-Age Children",
+                  "Family-Focused",
+                  "Kids’ Sports Programs",
+                  "Expats in Spain",
+                  "English Speakers in Madrid"
+                ]
+              }
+            }
+          }
+        ],
+        "extensions": {
+          "sitelinks": [
+            {
+              "text": "Clase de prueba gratuita",
+              "description1": "Reserva tu clase sin coste",
+              "description2": "Plazas limitadas",
+              "final_url": "https://lassobjjmadrid.com/index.html#contact",
+              "language": "es"
+            },
+            {
+              "text": "Horarios de clases",
+              "description1": "Consulta horarios de adultos y niños",
+              "description2": "Mañanas y tardes",
+              "final_url": "https://lassobjjmadrid.com/index.html#classes",
+              "language": "es"
+            },
+            {
+              "text": "Nuestra academia",
+              "description1": "Conoce quiénes somos",
+              "description2": "Filosofía y valores",
+              "final_url": "https://lassobjjmadrid.com/index.html#about",
+              "language": "es"
+            },
+            {
+              "text": "Entrenadores expertos",
+              "description1": "Experiencia en BJJ",
+              "description2": "Trato cercano",
+              "final_url": "https://lassobjjmadrid.com/index.html#team",
+              "language": "es"
+            }
+          ],
+          "callouts": [
+            "Clase de prueba gratis",
+            "Profesores experimentados",
+            "Ambiente familiar",
+            "Entrenamiento seguro",
+            "Para todas las edades"
+          ],
+          "structured_snippets": [
+            {
+              "header": "Servicios",
+              "values": [
+                "Clases infantiles",
+                "Clases para adultos",
+                "Defensa personal",
+                "Competición"
+              ],
+              "language": "es"
+            },
+            {
+              "header": "Beneficios",
+              "values": [
+                "Confianza y disciplina",
+                "Psicomotricidad",
+                "Respeto y trabajo en equipo",
+                "Diversión asegurada"
+              ],
+              "language": "es"
+            }
+          ],
+          "phone": {
+            "country_code": "ES",
+            "number": "647547358"
+          },
+          "location_extension": {
+            "linked_business_profile": true
+          }
+        }
+      }
+    ]
+  }
