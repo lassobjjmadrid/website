@@ -346,6 +346,28 @@ Fecha: ${new Date().toLocaleString('es-ES')}
         console.log('Contact form submitted:', formData.interest);
     }
 
+    // Check for #contact hash in URL and open modal
+    function checkForContactHash() {
+        const hash = window.location.hash;
+        if (hash === '#contact') {
+            // Small delay to ensure DOM is ready
+            setTimeout(() => {
+                $('#contactModal').modal('show');
+                
+                // Track modal opening from URL hash for analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'modal_open', {
+                        'event_category': 'contact',
+                        'event_label': 'url_hash',
+                        'value': 1
+                    });
+                }
+                
+                console.log('Contact modal opened from URL hash');
+            }, 100);
+        }
+    }
+
     // Public API for external use
     window.LassoContact = {
         // Pre-fill form with data
@@ -379,6 +401,14 @@ Fecha: ${new Date().toLocaleString('es-ES')}
 
     // Initialize when DOM is ready
     initContactForm();
+
+    // Check for #contact hash in URL and open modal
+    checkForContactHash();
+
+    // Listen for hash changes (for tracking purposes)
+    $(window).on('hashchange', function() {
+        checkForContactHash();
+    });
 
     console.log('Contact form system loaded');
 });
