@@ -52,6 +52,8 @@ h6 {
     font-size: 5em;
 }
 
+.intro-message .promo-banner + h1 { margin-top: 10px; }
+
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;

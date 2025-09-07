@@ -1,3 +1,68 @@
+
+/* === September Promo Banner (Hero) === */
+.promo-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 999px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  margin-bottom: 16px;
+}
+.promo-banner .promo-text { font-weight: 500; }
+.promo-banner .old-inline {
+  text-decoration: line-through;
+  color: #888;
+}
+.promo-banner .new-inline { font-weight: 700; color: #d9534f; }
+.promo-banner .arrow { opacity: 0.6; margin: 0 2px; }
+.promo-banner .promo-cta { padding: 6px 10px; border-radius: 999px; }
+@media (max-width: 480px) {
+  .promo-banner { display: flex; flex-direction: column; text-align: center; gap: 8px; }
+}
+
+/* === Price cards: strike-through old price + highlight new price === */
+.precio-card .precio-valor {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.precio-card .old-price {
+  font-size: 26px;
+  color: #888;
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+.precio-card .old-moneda {
+  font-size: 18px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+.precio-card .new-price {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1;
+  color: #0056b3;
+}
+/* Small label under price */
+.precio-card .precio-etiqueta {
+  margin-top: 8px;
+  display: inline-block;
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffe08a;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+@media (max-width: 480px) {
+  .precio-card .new-price { font-size: 44px; }
+}
 #navbar-enableJS {
   font-size: 0.7em;
   margin-left: -9em;
