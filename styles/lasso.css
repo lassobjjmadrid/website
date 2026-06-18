@@ -1216,3 +1216,14 @@ Free Class Modal Styles === */
     margin: 10px;
   }
 }
+
+/* Community photos band */
+#community .community-photo img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+#community .community-photo {
+  margin-bottom: 20px;
+}
