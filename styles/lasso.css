@@ -265,7 +265,7 @@ p#seeMap {
 .precios-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding: 40px 20px;
   gap: 30px;
   /* Espacio entre las tarjetas */
@@ -301,6 +301,12 @@ p#seeMap {
   font-weight: 600;
   color: #333;
   margin-bottom: 15px;
+  /* Reserva dos líneas para que las tarjetas tengan la misma altura
+     aunque un título ocupe una sola línea ("Adultos") */
+  min-height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Estilo para el número del precio */
@@ -319,6 +325,7 @@ p#seeMap {
   vertical-align: super;
   /* Alinea el símbolo arriba */
   margin-left: 2px;
+  color: var(--brand-accent);
 }
 
 /* Pequeña descripción opcional debajo del precio */
@@ -1333,4 +1340,91 @@ h6,
 .section-heading.text-center::after {
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* === Footer refinement =============================================
+   Single-line nav that wraps gracefully, on-brand link colors, and the
+   menu/copyright block vertically centered against the map card. */
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.list-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
+.list-footer > li {
+  padding: 0; /* override Bootstrap .list-inline spacing */
+}
+
+.list-footer a {
+  color: var(--brand-ink);
+  font-weight: 600;
+  font-size: 13px;
+  transition: color 0.15s ease;
+}
+
+.list-footer a:hover,
+.list-footer a:focus {
+  color: var(--brand-accent);
+  text-decoration: none;
+}
+
+.footer-menu-divider {
+  color: #c9c9c9;
+}
+
+/* Keep copyright + legal links on-brand */
+p.copyright a {
+  color: var(--brand-ink);
+  font-weight: 600;
+}
+
+p.copyright a:hover,
+p.copyright a:focus {
+  color: var(--brand-accent);
+  text-decoration: none;
+}
+
+/* Contact links inside the map card share the brand colors */
+.map-info a {
+  color: var(--brand-ink);
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.map-info a:hover,
+.map-info a:focus {
+  color: var(--brand-accent);
+  text-decoration: none;
+}
+
+/* On stacked layouts, center the footer nav under the map */
+@media (max-width: 991px) {
+  .footer-row {
+    display: block;
+  }
+  .list-footer {
+    justify-content: center;
+  }
+  .copyright {
+    text-align: center;
+  }
+}
+
+/* On phones, wrap the nav into clean centered rows without the dots */
+@media (max-width: 767px) {
+  .list-footer {
+    gap: 10px 16px;
+  }
+  .list-footer .footer-menu-divider {
+    display: none;
+  }
 }
