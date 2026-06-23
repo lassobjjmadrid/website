@@ -69,7 +69,13 @@
 }
 
 .intro-header {
-  background: url(../images/cover.webp) no-repeat center center;
+  background: linear-gradient(
+      to bottom,
+      rgba(15, 15, 18, 0.45) 0%,
+      rgba(15, 15, 18, 0.35) 45%,
+      rgba(15, 15, 18, 0.65) 100%
+    ),
+    url(../images/cover.webp) no-repeat center center;
   background-size: cover;
 }
 
@@ -92,8 +98,7 @@
 div.origin {
   font-size: 16px;
   font-weight: 400;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
   margin-bottom: 70px;
 }
 
@@ -1220,10 +1225,112 @@ Free Class Modal Styles === */
 /* Community photos band */
 #community .community-photo img {
   width: 100%;
+  height: 340px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#community .community-photo img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 #community .community-photo {
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  #community .community-photo img {
+    height: 240px;
+  }
+}
+
+/* Spacing between stacked team member bios */
+#team .team-member {
+  margin-top: 40px;
+}
+
+/* === Brand identity layer ===========================================
+   Distinctive athletic display type + one consistent accent color,
+   layered on top of the Bootstrap landing template. */
+:root {
+  --brand-ink: #161618; /* near-black for display type */
+  --brand-accent: #c1121f; /* single signature red (martial energy) */
+  --brand-accent-dark: #9d0e18; /* hover/active state */
+}
+
+/* Condensed display face for all headings + the hero wordmark */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-heading,
+.navbar-brand,
+.intro-message > h1,
+.intro-message > h2 {
+  font-family: "Oswald", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.intro-message > h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.intro-message > h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 1.6em;
+}
+
+/* Left-align body copy — justified text creates rivers on narrow columns */
+.lead {
+  text-align: left;
+}
+
+/* Unify the accent: price highlight + primary CTA share one red */
+.precio-card .new-price {
+  color: var(--brand-accent);
+}
+
+.btn-danger {
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+  background-color: var(--brand-accent-dark);
+  border-color: var(--brand-accent-dark);
+}
+
+/* Accent underline under section headings for a consistent visual motif */
+.content-section-a .section-heading,
+.content-section-b .section-heading {
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.content-section-a .section-heading::after,
+.content-section-b .section-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 3px;
+  background: var(--brand-accent);
+}
+
+.section-heading.text-center::after {
+  left: 50%;
+  transform: translateX(-50%);
 }
